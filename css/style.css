@@ -1,0 +1,11 @@
+body {
+ font-family: Roboto, 'Comic Sans MS', cursive;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto-regular.ttf);
+  src: url(../fonts/Roboto-bold.ttf);
+  src: url(./fonts/Roboto-black.ttf);
+  src: url(../fonts/Roboto-medium.ttf);
+}
