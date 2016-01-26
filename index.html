@@ -3,10 +3,227 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="fonts\Roboto-bold.ttf">
+    <link href="fonts\Roboto-regular.ttf">
+    <link href="fonts\Roboto-medium.ttf">
+    <link href="fonts\Roboto-black.ttf">
+    <link href="fonts\Roboto-bold.ttf">
+    <link href="css\style.css" rel="stylesheet" type="text/css">-->
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
+  <body style="background:#849d8f">
+    <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>-->
+    <header>
+      <img src="img/Logo.svg" width="153" height="63.25">
+      <nav class="main-menu">
+        <ul>
+          <li class="main-menu-item"><a href="#">Каталог</a>
+          <!--  <ul class="sub-menu-catalog">
+              <li class="sub-menu-item">
+                <a href="#">Новинки</a>
+              </li>
+              <hr class="sub-menu-hr" noshade size=1>
+              <li class="sub-menu-item">
+                <a href="#">Сливочное</a>
+              </li>
+              <li class="sub-menu-item sub-menu-current">
+                <a href="#">Щербеты</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="#">Фруктовый лед</a>
+              </li>
+              <li class="sub-menu-item">
+                <a href="#">Мелорин</a>
+              </li>
+            </ul>-->
+          </li>
+          <li class="main-menu-item"><a href="#">Доставка и оплата</a></li>
+          <li class="main-menu-item"><a href="#">О Компании</a></li>
+        </ul>
+      <a href="#" class="btn"><img class="search-btn" src="img/Search.svg" alt="Поиск"></a>
+      <a class="btn entrance-btn" href="#">Вход</a>
+      <a class="btn cart-btn" href="#">Пусто</a>
+      <div class="header-schedule-and-phone">
+        <p class="header-schedule">С 10 до 20, ежедневно</p>
+        <p class="header-phone">8 812 450-25-25</p>
+      </div>
+    </header>
+    <main>
+      <div class="slider">
+        <div class="slider-buttons-block">
+          <div class="slider-button-active"></div>
+          <div class="slider-button"></div>
+          <div class="slider-button"></div>
+        </div>
+      </div>
+      <div class="slider-image-and-text">
+        <p class="slider-text">
+          Крем-брюле и пломбир<br>
+          с малиновым джемом
+        </p>
+        <a class="btn-red slider-image-button" href="#">Давайте оба!</a>
+      </div>
+      <div class="special-offers">
+        <section class="special-offer-left raspberry">
+          <h2>Малинка даром!</h2>
+          <p>
+            При покупке 2 кг любого фруктового мороженого, добавим
+            в ваш заказ банку малинового варенья бесплатно.
+          </p>
+          <a class="btn-red special-offer-btn" href="#">Хочу варенье!</a>
+        </section>
+        <section class="special-offer-right chocolate">
+          <h2>Шоколадки даром!</h2>
+          <p>
+            При покупке 2 кг пломбира, добавим в ваш заказ упаковку
+            вкуснейшей шоколадной присыпки совершенно бесплатно.
+          </p>
+          <a class="btn-red special-offer-btn" href="#">Хочу шоколадки!</a>
+        </section>
+      </div>
+      <div class="ice-cream-list">
+        <article class="ice-cream-item orange-ice-cream">
+          <a href="#">
+            <img src="img/hit.png" width="61px" height="61px" alt="Xит!">
+            <h2>310 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p>
+              Сливочное с апельсиновым джемом и цитрусовой стружкой
+            </p>
+          </a>
+        </article>
+        <article class="ice-cream-item coffee-ice-cream">
+          <a href="#">
+            <img src="img/hit.png" width="61px" height="61px" alt="Xит!">
+            <h2>380 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p>
+              Сливочно-кофейное с кусочками шоколада
+            </p>
+          </a>
+        </article>
+        <article class="ice-cream-item strawberry-ice-cream">
+          <a href="#">
+            <img src="img/hit.png" width="61px" height="61px" alt="Xит!">
+            <h2>355 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p>
+              Сливочно-клубничное с присыпкой из белого шоколада
+            </p>
+          </a>
+        </article>
+        <article class="ice-cream-item brulee-ice-cream">
+          <a href="#">
+            <img src="img/hit.png" width="61px" height="61px" alt="Xит!">
+            <h2>415 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p>
+              Сливочное крем-брюле с карамельной подливкой
+            </p>
+          </a>
+        </article>
+      </div>
+      <section class="about-us">
+        <h1>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+        <div class="about-us-left">
+          <img src="img/ice-cream-small.svg">
+          <p>
+            Все наше мороженое изготавливается на собственном
+            производстве, с использованием современного оборудования
+            и проверенных временем технологий.
+          </p>
+          <img src="img/leaf.svg">
+          <p>
+            Все наше мороженое изготавливается на собственном
+            производстве, с использованием современного оборудования
+            и проверенных временем технологий.
+          </p>
+        </div>
+        <div class="about-us-right">
+          <img src="img/cow.svg">
+          <p>
+            Закупка ингредиентов производится только у проверенных
+            фермерских хозяйств и компаний, с которыми нас связывает
+            долговременное сотрудничество.
+          </p>
+          <img src="img/thermometer.svg">
+          <p>
+            Доставка нашего мороженого до заказчиков осуществляется
+            в специальном термопаке, которая не дает мороженому
+            растаять в пути и позволяет ему сохранить свой превосходный
+            вкус.
+          </p>
+        </div>
+      </section>
+      <div class="special-offers">
+        <section class="special-offer-left blog-news">
+          <p>
+            Новое в нашем блоге
+          </p>
+          <a class="blog-news-link" href="#">
+            10  способов сервировки
+            фруктовых щербетов
+            к столу
+          </a>
+        </section>
+        <section class="special-offer-right newsletter-subscription">
+          <p>
+            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+            всего самого вкусного, что у нас происходит. Обещаем не спамить
+            и не слать всякой не нужной ерунды. Честно =)
+          </p>
+          <input class="btn-red newsletter-subscription-field" name="e-mail" type="text" placeholder="Электронная почта">
+          <button class="btn-red newsletter-subscription-btn" href="#">
+            Оптравить
+          </button>
+        </section>
+      </div>
+      <div class="map-block">
+        <img src="img/pin.png" width="" height="">
+        <section class="map-address-block">
+          <p>
+            Адрес главного офиса и <br>
+            офлайн магазина:
+          </p>
+          <p class="map-address-and-block">
+            ул. Большая Конюшенная <br>
+            19/8, Санкт-Петербург
+          </p>
+          <p>
+            Для заказов по телефону:
+          </p>
+          <p class="map-address-and-block">
+            8 812 450-25-25
+          </p>
+          <p>
+            (с 10 до 20 ежедневно)
+          </p>
+          <a href="#" class="btn-red map-form-btn">Форма обратной связи</a>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <section class="footer-social">
+        <a class="social-btn social-btn-tweeter" href="#"></a>
+        <a class="social-btn social-btn-inst" href="#"></a>
+        <a class="social-btn social-btn-fb" href="#"></a>
+        <a class="social-btn social-btn-vk" href="#"></a>
+      </section>
+      <section class="footer-info">
+        <div class="footer-info-left">
+            <a href="#" class="footer-info-link-for-suppliers">
+              <img src="img/heart.svg" width="15" height="13">  <!-- или через псевдокласс :before и background-image? -->
+              <b>Для поставщиков</b>
+            </a>
+            <a href="#">О производстве</a>
+        </div>
+        <div class="footer-info-right">
+          <a href="#">Наши документы</a>
+          <a href="#">Экологические стандарты</a>
+        </div>
+      </section>
+      <section class="footer-copyright">
+        <a href="#"><img src="img/htmlacademy.svg" alt="htmlacademy.ru" /></a>
+        <p>
+          Сделано в <a href="#">HTML Academy</a> &copy; 2016
+        </p>
+      </section>
+    </footer>
 
   </body>
 </html>
