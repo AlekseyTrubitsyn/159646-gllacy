@@ -40,7 +40,7 @@
       <!-- Внутри хедера и потом position: absolute?-->
       <div class="header-schedule-and-phone">
         <p class="header-schedule">С 10 до 20, ежедневно</p>
-        <h2 class="header-phone">8 812 450-25-25</h2>
+        <p class="header-phone">8 812 450-25-25</p>
       </div>
       <!-- -->
     </header>
@@ -82,7 +82,7 @@
           <a href="#">
             <!-- Через :before к изображению с классом *хит? --> <!--<img src="img/hit.png" width="61px" height="61px" alt="Xит!">-->
             <img class="ice-cream-item-hit" src="img/catalog/ice-cream-orange.png" width="267px" height="267px" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
-            <h2>310 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">310 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочное с апельсиновым джемом и цитрусовой стружкой
             </p>
@@ -91,7 +91,7 @@
         <article class="ice-cream-item">
           <a href="#">
             <img class="ice-cream-item-hit" src="img/catalog/ice-cream-coffee.png" width="267px" height="267px" alt="Сливочно-кофейное мороженое с кусочками шоколада">
-            <h2>380 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">380 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочно-кофейное с кусочками шоколада
             </p>
@@ -100,7 +100,7 @@
         <article class="ice-cream-item">
           <a href="#">
             <img class="ice-cream-item-hit" src="img/catalog/ice-cream-strawberry.png" width="267px" height="267px" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-            <h2>355 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">355 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочно-клубничное с присыпкой из белого шоколада
             </p>
@@ -109,7 +109,7 @@
         <article class="ice-cream-item">
           <a href="#">
             <img class="ice-cream-item-hit" src="img/catalog/ice-cream-Brulle.png" width="267px" height="267px" alt="Сливочное крем-брюле с карамельной подливкой">
-            <h2>415 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">415 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочное крем-брюле с карамельной подливкой
             </p>
@@ -117,7 +117,7 @@
         </article>
       </div>
       <section class="about-us">
-        <h1>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+        <h2 class="about-us-title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2> <!-- или это h1?-->
         <div class="about-us-left">
           <img src="img/ice-cream-small.svg">
           <p>
@@ -178,15 +178,19 @@
             Адрес главного офиса и <br>
             офлайн магазина:
           </p>
-          <p class="map-address-and-block">
-            ул. Большая Конюшенная <br>
-            19/8, Санкт-Петербург
+          <p>
+            <b>
+              ул. Большая Конюшенная <br>
+              19/8, Санкт-Петербург
+            </b>
           </p>
           <p>
             Для заказов по телефону:
           </p>
-          <p class="map-address-and-block">
-            8 812 450-25-25
+          <p>
+            <b>
+              8 812 450-25-25
+            </b>
           </p>
           <p>
             (с 10 до 20 ежедневно)

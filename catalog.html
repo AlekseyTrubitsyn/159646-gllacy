@@ -40,7 +40,7 @@
       <!-- Внутри хедера и потом position: absolute?-->
       <div class="header-schedule-and-phone">
         <p class="header-schedule">С 10 до 20, ежедневно</p>
-        <h2 class="header-phone">8 812 450-25-25</h2>
+        <p class="header-phone">8 812 450-25-25</p>
       </div>
       <!-- -->
     </header>
@@ -53,10 +53,17 @@
       <h1>Сливочное мороженое</h1>
       <div class="filters">
         <div class="filter">
-          <label class="filter-label" for="filters-sort-selector">Сортировка:</label>
-          <select class="filter-content" id="filters-sort-selector">
-            <option>По популярности</option>
-          </select>
+          <p class="filter-label">
+            Цена: <span id="filters-price-from">100</span> руб. - <span id="filters-price-to">500</span> руб.
+          </p>
+          <div class="filter-content">
+            <p>по популярности:</p>
+            <!--<div class="filter-sort-submenu">
+                <p id="filter-sort-submenu-cheap">снача недорогие</p>
+                <p id="filter-sort-submenu-expensive">снача дорогие</p>
+                <p id="filter-sort-submenu-fat">по жирности</p>
+            </div>-->
+          </div>
         </div>
         <div class="filter">
           <p class="filter-label">
@@ -109,10 +116,10 @@
         </button>
       </div>
       <div class="ice-cream-list">
-        <article class="ice-cream-ite">
+        <article class="ice-cream-item">
           <a href="#">
             <img src="img/catalog/ice-cream-orange.png" width="267px" height="267px" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
-            <h2>310 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">310 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочное с апельсиновым джемом и цитрусовой стружкой
             </p>
@@ -121,7 +128,7 @@
         <article class="ice-cream-item">
           <a href="#">
             <img src="img/catalog/ice-cream-coffee.png" width="267px" height="267px" alt="Сливочно-кофейное мороженое с кусочками шоколада">
-            <h2>380 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">380 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочно-кофейное с кусочками шоколада
             </p>
@@ -130,7 +137,7 @@
         <article class="ice-cream-item">
           <a href="#">
             <img src="img/catalog/ice-cream-strawberry.png" width="267px" height="267px" alt="Сливочно-клубничное мороженое с присыпкой из белого шоколада">
-            <h2>355 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">355 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочно-клубничное с присыпкой из белого шоколада
             </p>
@@ -139,7 +146,7 @@
         <article class="ice-cream-item">
           <a href="#">
             <img src="img/catalog/ice-cream-brulle.png" width="267px" height="267px" alt="Сливочное мороженое крем-брюле с карамельной подливкой">
-            <h2>415 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">415 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочное крем-брюле с карамельной подливкой
             </p>
@@ -150,7 +157,7 @@
         <article class="ice-cream-item">
           <a href="#">
             <img src="img/catalog/ice-cream-cowberry.png" width="267px" height="267px" alt="Сливочное мороженое с брусничным джемом">
-            <h2>325 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">325 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочное с брусничным джемом
             </p>
@@ -159,7 +166,7 @@
         <article class="ice-cream-item">
           <a href="#">
             <img src="img/catalog/ice-cream-blueberry.png" width="267px" height="267px" alt="Сливочно-черничное мороженое с цельными ягодами черники">
-            <h2>410 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">410 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочно-черничное с цельными ягодами черники
             </p>
@@ -168,7 +175,7 @@
         <article class="ice-cream-item">
           <a href="#">
             <img src="img/catalog/ice-cream-lemon.png" width="267px" height="267px" alt="Сливочно-лимонное мороженое с карамельной присыпкой">
-            <h2>375 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">375 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочно-лимонное с карамельной присыпкой
             </p>
@@ -177,7 +184,7 @@
         <article class="ice-cream-item">
           <a href="#">
             <img src="img/catalog/ice-cream-chocolate-chips.png" width="267px" height="267px" alt="Сливочное мороженое с шоколадной стружкой">
-            <h2>320 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">320 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочное с шоколадной стружкой
             </p>
@@ -188,7 +195,7 @@
         <article class="ice-cream-item">
           <a href="#">
             <img src="img/catalog/ice-cream-chocolate-chips.png" width="267px" height="267px" alt="Сливочное мороженое с шоколадной стружкой">
-            <h2>440 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">440 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочно-ванильное с кусочками шоколада
             </p>
@@ -197,7 +204,7 @@
         <article class="ice-cream-item">
           <a href="#">
             <img src="img/catalog/ice-cream-menthol.png" width="267px" height="267px" alt="Сливочное мороженое с ментоловым сиропом">
-            <h2>435 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">435 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span></p>
             <p>
               Сливочное с ментоловым сиропом
             </p>
@@ -206,7 +213,7 @@
         <article class="ice-cream-item">
           <a href="#">
             <img src="img/catalog/ice-cream-dark-choco.png" width="267px" height="267px" alt="Сливочное мороженое с кусочками черного шоколада">
-            <h2>355 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">355 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочное с кусочками черного шоколада
             </p>
@@ -215,14 +222,14 @@
         <article class="ice-cream-item">
           <a href="#">
             <img src="img/catalog/ice-cream-mint.png" width="267px" height="267px" alt="Сливочное мороженое с кусочками черного шоколада">
-            <h2>420 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> /кг</h2>
+            <p class="ice-cream-item-price">420 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
               Сливочное с мятным сиропом
             </p>
           </a>
         </article>
       </div>
-      <div class="good-list-pages">
+      <div class="ice-cream-list-pages">
         <button class="ice-cream-list-pages-btn-prev"></button>
         <button class="ice-cream-list-pages-btn ice-cream-list-pages-current">1</button>
         <button class="ice-cream-list-pages-btn">2</button>
