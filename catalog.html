@@ -51,70 +51,72 @@
         <a class="bread-crumbs-item bread-crumbs-item-active" href="#">Сливочное</a>
       </div>
       <h1>Сливочное мороженое</h1>
-      <div class="filters">
-        <div class="filter">
-          <p class="filter-label">
-            Цена: <span id="filters-price-from">100</span> руб. - <span id="filters-price-to">500</span> руб.
-          </p>
-          <div class="filter-content">
-            <p>по популярности:</p>
-            <div class="filter-sort-submenu">
-                <p id="filter-sort-submenu-cheap">снача недорогие</p>
-                <p id="filter-sort-submenu-expensive">снача дорогие</p>
-                <p id="filter-sort-submenu-fat">по жирности</p>
+      <form action="" method="post">
+        <div class="filters">
+          <div class="filter">
+            <p class="filter-label">
+              Цена: <span id="filters-price-from">100</span> руб. - <span id="filters-price-to">500</span> руб.
+            </p>
+            <div class="filter-content">
+              <p>по популярности:</p>
+              <div class="filter-sort-submenu">
+                  <p id="filter-sort-submenu-cheap">снача недорогие</p>
+                  <p id="filter-sort-submenu-expensive">снача дорогие</p>
+                  <p id="filter-sort-submenu-fat">по жирности</p>
+              </div>
+            </div>
+          </div>
+          <div class="filter">
+            <p class="filter-label">
+              Цена: <span id="filters-price-from">100</span> руб. - <span id="filters-price-to">500</span> руб.
+            </p>
+            <div class="filter-content">
+              <div class="filter-range-scale">
+                <div class="filter-range-bar"></div>
+              </div>
+              <div class="filter-range-toggle" id="filter-range-min-toggle"></div>
+              <div class="filter-range-toggle" id="filter-range-max-toggle"></div>
+            </div>
+          </div>
+          <div class="filter">
+            <p class="filter-label">
+              Жирность:
+            </p>
+            <div class="filter-content">
+              <input name="filter-fat-radio" type="radio" id="fat-0">
+              <label for="fat-0">0%</label>
+              <input name="filter-fat-radio" type="radio" id="fat-10" checked>
+              <label for="fat-10">до 10%</label>
+              <input name="filter-fat-radio" type="radio" id="fat-30">
+              <label for="fat-30">до 30%</label>
+              <input name="filter-fat-radio" type="radio" id="fat-more-30">
+              <label for="fat-more-30">выше 30%</label>
             </div>
           </div>
         </div>
-        <div class="filter">
-          <p class="filter-label">
-            Цена: <span id="filters-price-from">100</span> руб. - <span id="filters-price-to">500</span> руб.
-          </p>
-          <div class="filter-content">
-            <div class="filter-range-scale">
-              <div class="filter-range-bar"></div>
+        <div class="filters">
+          <div class="filter">
+            <p class="filter-label">
+              Наполнители:
+            </p>
+            <div class="filter-content">
+              <input name="filter-filler-checkbox" type="checkbox" id="filler-choco" checked>
+              <label for="filler-choco">шоколадные</label>
+              <input name="filter-filler-checkbox" type="checkbox" id="filler-sugar-powder" checked>
+              <label for="filler-sugar-powder">сахарные присыпки</label>
+              <input name="filter-filler-checkbox" type="checkbox" id="filler-fruits">
+              <label for="filler-fruits">фрукты</label>
+              <input name="filter-filler-checkbox" type="checkbox" id="filler-syrup">
+              <label for="filler-syrup">сиропы</label>
+              <input name="filter-filler-checkbox" type="checkbox" id="filler-jam">
+              <label for="filler-jam">джемы</label>
             </div>
-            <div class="filter-range-toggle" id="filter-range-min-toggle"></div>
-            <div class="filter-range-toggle" id="filter-range-max-toggle"></div>
           </div>
+          <button class="filters-apply-button" type="submit">
+            Применить
+          </button>
         </div>
-        <div class="filter">
-          <p class="filter-label">
-            Жирность:
-          </p>
-          <div class="filter-content">
-            <input name="filter-fat-radio" type="radio" id="fat-0">
-            <label for="fat-0">0%</label>
-            <input name="filter-fat-radio" type="radio" id="fat-10" checked>
-            <label for="fat-10">до 10%</label>
-            <input name="filter-fat-radio" type="radio" id="fat-30">
-            <label for="fat-30">до 30%</label>
-            <input name="filter-fat-radio" type="radio" id="fat-more-30">
-            <label for="fat-more-30">выше 30%</label>
-          </div>
-        </div>
-      </div>
-      <div class="filters">
-        <div class="filter">
-          <p class="filter-label">
-            Наполнители:
-          </p>
-          <div class="filter-content">
-            <input name="filter-filler-checkbox" type="checkbox" id="filler-choco" checked>
-            <label for="filler-choco">шоколадные</label>
-            <input name="filter-filler-checkbox" type="checkbox" id="filler-sugar-powder" checked>
-            <label for="filler-sugar-powder">сахарные присыпки</label>
-            <input name="filter-filler-checkbox" type="checkbox" id="filler-fruits">
-            <label for="filler-fruits">фрукты</label>
-            <input name="filter-filler-checkbox" type="checkbox" id="filler-syrup">
-            <label for="filler-syrup">сиропы</label>
-            <input name="filter-filler-checkbox" type="checkbox" id="filler-jam">
-            <label for="filler-jam">джемы</label>
-          </div>
-        </div>
-        <button class="filters-apply-button">
-          Применить
-        </button>
-      </div>
+      </form>
       <div class="ice-cream-list">
         <article class="ice-cream-item">
           <a href="#">
