@@ -159,17 +159,21 @@
             к столу
           </a>
         </section>
-        <section class="special-offer-right newsletter-subscription">
-          <p>
-            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
-            всего самого вкусного, что у нас происходит. Обещаем не спамить
-            и не слать всякой не нужной ерунды. Честно =)
-          </p>
-          <input class="btn-red newsletter-subscription-field" name="e-mail" type="text" placeholder="Электронная почта">
+        <!-- <section class="special-offer-right newsletter-subscription"> form внутри section или вместо? -->
+        <form class="special-offer-right newsletter-subscription" method="post" action="">
+          <label for="newsletter-subscription-field">
+            <p>
+              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
+              всего самого вкусного, что у нас происходит. Обещаем не спамить
+              и не слать всякой не нужной ерунды. Честно =)
+            </p>
+          </label>
+          <input class="btn-red" id="newsletter-subscription-field" name="e-mail" type="text" placeholder="Электронная почта">
           <button class="btn-red newsletter-subscription-btn">
             Оптравить
           </button>
-        </section>
+        </form>
+      <!--</section>-->
       </div>
       <div class="map-block">
         <img src="img/pin.png" width="" height="">
