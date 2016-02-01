@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <!-- Шрифты - через css -->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <img src="img/logo.svg" width="153" height="64">
+      <a class="logo-btn" href="#">gllacy</a>
       <nav class="main-menu">
         <ul>
           <li class="main-menu-item"><a href="#">Каталог</a>
@@ -55,7 +54,7 @@
         <div class="filters">
           <div class="filter">
             <p class="filter-label">
-              Цена: <span id="filters-price-from">100</span> руб. - <span id="filters-price-to">500</span> руб.
+              Сортировка:
             </p>
             <div class="filter-content">
               <p>по популярности:</p>
@@ -68,7 +67,7 @@
           </div>
           <div class="filter">
             <p class="filter-label">
-              Цена: <span id="filters-price-from">100</span> руб. - <span id="filters-price-to">500</span> руб.
+              Цена: <input type="number" id="filters-price-from" value="100"> руб. - <input type="number" id="filters-price-to" value="500"> руб.
             </p>
             <div class="filter-content">
               <div class="filter-range-scale">

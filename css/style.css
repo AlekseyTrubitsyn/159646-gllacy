@@ -5,7 +5,9 @@ body {
  background: #849d8f;
 }
 
-h1, h2, header,
+h1,
+h2,
+header,
 .slider-image-button,
 .special-offers,
 .special-offer-btn,
@@ -15,8 +17,8 @@ h1, h2, header,
   font-weight: 700;
 }
 
-h2.about-us-title,
-header a.btn,
+header .btn,
+.about-us-title,
 .filter,
 .ice-cream-item,
 .ice-cream-list-pages,
@@ -25,11 +27,12 @@ header a.btn,
 }
 
 .header-phone,
-p.slider-text {
+.slider-text {
   font-weight: 900;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 35px;
 }
 
@@ -37,7 +40,7 @@ h1, h2 {
   font-size: 17px;
 }
 
-header a.btn,
+header .btn,
 .bread-crumps,
 .filter-label,
 .filter .filter-sort-submenu
@@ -45,15 +48,15 @@ header a.btn,
   font-size: 14px;
 }
 
-p.slider-text{
+.slider-text{
   font-size: 60px;
 }
 
-a.slider-image-button{
+.slider-image-button{
   font-size: 32px;/*31.48px*/
 }
 
-h2.about-us-title,
+.about-us-title,
 .blog-news-link{
   font-size: 24px;
 }
@@ -81,9 +84,24 @@ footer {
 }
 
 @font-face {
-    font-family: Roboto;
-    src: url(../fonts/Roboto-bold.ttf),
-         url(../fonts/Roboto-black.ttf),
-         url(../fonts/Roboto-regular.ttf),
-         url(../fonts/Roboto-medium.ttf);
-  }
+  font-family: Roboto;
+  src: url(../fonts/Roboto-regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 700;
+  src: url(../fonts/Roboto-bold.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 900;
+  src: url(../fonts/Roboto-black.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 500;
+  src: url(../fonts/Roboto-medium.ttf);
+}
