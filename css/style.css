@@ -57,13 +57,14 @@ header .btn,
 }
 
 .ice-cream-item-price{
-  margin-top: -22px;
+  margin-top: -65px;
   margin-bottom: 0;
   font-size: 45px;
 }
 
 .ice-cream-item-price span{
   font-size: 30px;
+  margin-left: -14px;
 }
 
 .slider-image-button{
@@ -211,7 +212,7 @@ h1{
   border: 1px dashed yellow; /*TEMP*/
 }
 .filters:last-child{
-  margin-bottom: 38px;
+  margin-bottom: 18px;
 }
 .filter{
   border: 1px dashed blue; /*TEMP*/
@@ -238,13 +239,16 @@ h1{
 .ice-cream-item{
   float: left;
 }
-.ice-cream-item a{
-  display: block;
-  width: 267px;
-  height: 360px;
-  margin-right: 20px;
-  border: 1px dotted orange; /*TEMP*/
+.ice-cream-item a {
+	display: block;
+	width: 267px;
+	height: 320px;
+	margin-right: 20px;
+	border: 1px dotted orange;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
+
 .ice-cream-item:last-child a{
   margin-right: 0;
 }
