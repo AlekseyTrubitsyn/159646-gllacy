@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <!-- Шрифты - через css -->
     <link href="css\style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <header>
       <div class="container clearfix">
         <div class="header-top-line clearfix">
-          <a class="logo-btn" href="#">gllacy</a>
+          <a class="logo-btn" href="#">
+            <span class="visually-hidden">gllacy</span>
+          </a>
           <nav class="main-menu">
             <ul>
               <li class="main-menu-item"><a href="#">Каталог</a>
@@ -39,6 +40,13 @@
           </nav>
           <div class="header-right">
             <a href="#" class="btn"><img class="search-btn" src="img/Search.svg" alt="Поиск"></a>
+            <!-- <form action="">
+              <label>search</label>
+              <div class="wrap">
+                <input type="text">
+                <button class="btn search-btn" type="submit">Поиск</button>
+              </div>
+            </form>-->
             <a class="btn entrance-btn" href="#">Вход</a>
             <a class="btn cart-btn" href="#">Пусто</a>
           </div>
@@ -66,7 +74,7 @@
         </p>
         <a class="btn-red slider-image-button" href="#">Давайте оба!</a>
       </div>
-      <div class="special-offers">
+      <div class="special-offers clearfix">
         <section class="special-offer-left raspberry">
           <h2>Малинка даром!</h2>
           <p>
@@ -84,10 +92,9 @@
           <a class="btn-red special-offer-btn" href="#">Хочу шоколадки!</a>
         </section>
       </div>
-      <div class="ice-cream-list">
+      <div class="ice-cream-list ice-cream-hits clearfix">
         <article class="ice-cream-item">
           <a href="#">
-            <!-- Через :before к изображению с классом *хит? --> <!--<img src="img/hit.png" width="61px" height="61px" alt="Xит!">-->
             <img class="ice-cream-item-hit" src="img/catalog/ice-cream-orange.png" width="267px" height="267px" alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
             <p class="ice-cream-item-price">310 <img src="img/rub.png" alt="рублей" width="31px" height="36px"> <span>/кг</span>
             <p>
@@ -123,30 +130,31 @@
           </a>
         </article>
       </div>
-      <section class="about-us">
+      <section class="about-us clearfix">
         <h2 class="about-us-title">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2> <!-- или это h1?-->
         <div class="about-us-left">
-          <img src="img/ice-cream-small.svg">
+          <!-- <img src="img/ice-cream-small.svg" width="49px" height="49px"> -->
           <p>
             Все наше мороженое изготавливается на собственном
             производстве, с использованием современного оборудования
             и проверенных временем технологий.
           </p>
-          <img src="img/leaf.svg">
+          <!-- <img src="img/leaf.svg"> -->
           <p>
-            Все наше мороженое изготавливается на собственном
-            производстве, с использованием современного оборудования
-            и проверенных временем технологий.
+            Для приготовления мороженого используются настоящие
+            сливки и молоко высочайшего качества. Все дополнительные
+            ингредиенты и добавки произведены из натурального,
+            экологически чистого сырья.
           </p>
         </div>
         <div class="about-us-right">
-          <img src="img/cow.svg">
+          <!-- <img src="img/cow.svg"> -->
           <p>
             Закупка ингредиентов производится только у проверенных
             фермерских хозяйств и компаний, с которыми нас связывает
             долговременное сотрудничество.
           </p>
-          <img src="img/thermometer.svg">
+          <!-- <img src="img/thermometer.svg"> -->
           <p>
             Доставка нашего мороженого до заказчиков осуществляется
             в специальном термопаке, которая не дает мороженому
@@ -155,14 +163,14 @@
           </p>
         </div>
       </section>
-      <div class="special-offers">
+      <div class="special-offers clearfix">
         <section class="special-offer-left blog-news">
           <p>
             Новое в нашем блоге
           </p>
           <a class="blog-news-link" href="#">
-            10  способов сервировки
-            фруктовых щербетов
+            10  способов сервировки<br>
+            фруктовых щербетов<br>
             к столу
           </a>
         </section>
@@ -174,14 +182,13 @@
               и не слать всякой не нужной ерунды. Честно =)
             </p>
           </label>
-          <input class="btn-red" id="newsletter-subscription-field" name="e-mail" type="text" placeholder="Электронная почта">
+          <input class="subscription-email-field" id="newsletter-subscription-field" name="e-mail" type="text" placeholder="Электронная почта">
           <button class="btn-red newsletter-subscription-btn" type="submit">
             Оптравить
           </button>
         </form>
       </div>
-      <div class="map-block">
-        <img src="img/pin.png" width="" height="">
+      <div class="map-block clearfix">
         <section class="map-address-block">
           <p>
             Адрес главного офиса и
