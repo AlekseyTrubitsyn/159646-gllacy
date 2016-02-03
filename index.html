@@ -8,41 +8,48 @@
   </head>
   <body>
     <header>
-      <a class="logo-btn" href="#">gllacy</a>
-      <nav class="main-menu">
-        <ul>
-          <li class="main-menu-item"><a href="#">Каталог</a>
-            <ul class="sub-menu-catalog">
-              <li class="sub-menu-item">
-                <a href="#">Новинки</a>
+      <div class="container clearfix">
+        <div class="header-top-line clearfix">
+          <a class="logo-btn" href="#">gllacy</a>
+          <nav class="main-menu">
+            <ul>
+              <li class="main-menu-item"><a href="#">Каталог</a>
+                <ul class="sub-menu-catalog">
+                  <li class="sub-menu-item">
+                    <a href="#">Новинки</a>
+                  </li>
+                  <hr class="sub-menu-hr" noshade size=1>
+                  <li class="sub-menu-item sub-menu-current">
+                    <span href="#">Сливочное</span>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#">Щербеты</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#">Фруктовый лед</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="#">Мелорин</a>
+                  </li>
+                </ul>
               </li>
-              <hr class="sub-menu-hr" noshade size=1>
-              <li class="sub-menu-item">
-                <a href="#">Сливочное</a>
-              </li>
-              <li class="sub-menu-item">
-                <a href="#">Щербеты</a>
-              </li>
-              <li class="sub-menu-item">
-                <a href="#">Фруктовый лед</a>
-              </li>
-              <li class="sub-menu-item">
-                <a href="#">Мелорин</a>
-              </li>
+              <li class="main-menu-item"><a href="#">Доставка и оплата</a></li>
+              <li class="main-menu-item"><a href="#">О Компании</a></li>
             </ul>
-          </li>
-          <li class="main-menu-item"><a href="#">Доставка и оплата</a></li>
-          <li class="main-menu-item"><a href="#">О Компании</a></li>
-        </ul>
-      <a href="#" class="btn search-btn">Поиск</a>
-      <a class="btn entrance-btn" href="#">Вход</a>
-      <a class="btn cart-btn" href="#">Пусто</a>
-      <!-- Внутри хедера и потом position: absolute?-->
-      <div class="header-schedule-and-phone">
-        <p class="header-schedule">С 10 до 20, ежедневно</p>
-        <p class="header-phone">8 812 450-25-25</p>
+          </nav>
+          <div class="header-right">
+            <a href="#" class="btn"><img class="search-btn" src="img/Search.svg" alt="Поиск"></a>
+            <a class="btn entrance-btn" href="#">Вход</a>
+            <a class="btn cart-btn" href="#">Пусто</a>
+          </div>
+        </div>
+        <div class="header-bottom-line clearfix">
+          <div class="header-schedule-phone">
+            <p class="header-schedule">С 10 до 20, ежедневно</p>
+            <p class="header-phone">8 812 450-25-25</p>
+          </div>
+        </div>
       </div>
-      <!-- -->
     </header>
     <main>
       <div class="slider">
@@ -201,7 +208,7 @@
         </section>
       </div>
     </main>
-    <footer>
+    <footer class="clearfix">
       <section class="footer-social">
         <a class="social-btn social-btn-tweeter" href="#">tweeter</a>
         <a class="social-btn social-btn-inst" href="#">instagram</a>
@@ -221,7 +228,9 @@
         </div>
       </section>
       <section class="footer-copyright">
-        <a href="#"><img src="img/htmlacademy.svg" alt="htmlacademy.ru"/></a>
+        <a href="#">
+          <img src="img/htmlacademy.svg" alt="htmlacademy.ru"/>
+        </a>
         <p>
           Сделано в <a href="#">HTML Academy</a> &copy; 2016
         </p>
