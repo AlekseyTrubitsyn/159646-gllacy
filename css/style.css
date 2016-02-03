@@ -337,11 +337,16 @@ h1 {
   color: #353535;
   text-decoration: underline;
   display: block;
-  margin-top: 8px;
-  margin-bottom: 79px;
+  margin-top: 10px;
+  margin-bottom: 81px;
 }
 
 .newsletter-subscription {
+  padding-top: 37px;
+  padding-left: 26px;
+  padding-bottom: 40px;
+  padding-right: 26px;
+  width: 508px;
   background: url(../img/post-card.png);
   /*
   border: 6px solid white;
@@ -353,15 +358,45 @@ h1 {
   border-image-slice: 6;
   */
 }
-.newsletter-subscription p,
-.newsletter-subscription input {
+.newsletter-subscription-text,
+.subscription-email-field
+ {
   color: #5a5a5a
+}
+
+.newsletter-subscription-text {
+	display: block;
+	/*margin-top: 26px;
+	margin-left: 26px;
+	margin-right: 26px;*/
+  margin-bottom: 37px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.subscription-email-field {
+  border: 1px solid rgba(178,178,178,0.52);
+  border-radius: 4px;
+  background: #fff;
+  width: 355px;
+  line-height: 42px;
+  padding-left: 10px;
+  float: left;
+}
+
+.newsletter-subscription-btn {
+  float: left;
+  border: none;
+	border-radius: 21px;
+	line-height: 42px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 10px;
 }
 
 .map-block{
   display: block;
   height: 306px;
-  width: 100%;
   margin: 0;
   padding-top: 65px;
   padding-right: 27px;
