@@ -50,7 +50,10 @@ header .btn,
   font-size: 14px;
 }
 
-.slider-text {font-size: 60px;}
+.slider-text {
+  font-size: 60px;
+  margin: 0;
+}
 
 .ice-cream-item-price{
   margin-top: -65px;
@@ -190,6 +193,53 @@ ul{
 h1 {
   margin-top: 8px;
   margin-bottom: 35px;
+}
+
+.slider {
+  display: block;
+  position: relative;
+}
+
+.slider-image-and-text {
+	margin-top: -32px;
+	margin-bottom: -20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 680px;
+	height: 584px;
+	text-align: center;	
+	padding-top: 310px;
+	box-sizing: border-box;
+	background: url(../img/ice-cream-big.png) no-repeat 50% 30%;
+}
+
+.slider-image-button {
+	width: 280px;
+	line-height: 64px;
+	border-radius: 32px;
+	margin: auto;
+	/* margin-top: 35px; */
+}
+
+.slider-buttons-block{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+}
+
+.slider-button,
+.slider-button-active {
+    width: 21px;
+    height: 21px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: inline-block;
+}
+
+.slider-button-active {
+    background: #fff;
 }
 
 .filters-form {display: block;}
