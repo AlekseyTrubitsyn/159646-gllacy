@@ -502,7 +502,7 @@ padding-top: 20px;
   display: block;
 }
 
-.footer-social{
+.footer-social {
   margin-right: 236px;
 }
 
@@ -510,12 +510,16 @@ padding-top: 20px;
   margin-left: 32px;
 }
 
-.footer-copyright{
+.footer-copyright {
   float: right;
 }
-.footer-copyright p{
+.footer-copyright p {
   margin-top: 7px;
   margin-bottom: 0;
+}
+
+.transparent-underline {
+  border-bottom: 1px solid rgba(255,255,255,0.4);
 }
 
 /*.footer-copyright p{
