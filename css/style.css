@@ -2,8 +2,12 @@ body {
  font-family: 'Roboto', 'Helvetica', sans-serif;
  font-size: 16px;
  font-weight: 400;
- background: #849d8f;
  color: #fff;
+ background: #849d8f;
+}
+
+.index-body{
+  background: #849d8f url(../img/light.jpg) no-repeat 50% 0%;
 }
 
 h1,
@@ -208,10 +212,10 @@ h1 {
 	display: block;
 	width: 680px;
 	height: 584px;
-	text-align: center;	
+	text-align: center;
 	padding-top: 310px;
 	box-sizing: border-box;
-	background: url(../img/ice-cream-big.png) no-repeat 50% 30%;
+	background: url(../img/ice-cream-big.png) no-repeat 50% 28%;
 }
 
 .slider-image-button {
@@ -225,7 +229,7 @@ h1 {
 .slider-buttons-block{
     position: absolute;
     left: 0;
-    bottom: 20px;
+    bottom: 83px;
 }
 
 .slider-button,
@@ -289,7 +293,11 @@ h1 {
   margin-right: 0;
 }
 
-.special-offers {margin-bottom: 20px;}
+.special-offers {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 5;
+}
 
 .special-offers h2 {
 	margin-top: 14px;
