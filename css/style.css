@@ -227,23 +227,23 @@ h1 {
 }
 
 .slider-buttons-block{
-    position: absolute;
-    left: 0;
-    bottom: 83px;
+  position: absolute;
+  left: 0;
+  bottom: 83px;
 }
 
 .slider-button,
 .slider-button-active {
-    width: 21px;
-    height: 21px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    display: inline-block;
+  width: 21px;
+  height: 21px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  display: inline-block;
 }
 
 .slider-button-active {
-    background: #fff;
+  background: #fff;
 }
 
 .filters-form {display: block;}
@@ -366,6 +366,12 @@ h1 {
   color: #323232;
 }
 
+.about-us p {
+  padding-left: 57px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
 .about-us h2 {
   margin: 0;
   padding-top: 24px;
@@ -380,11 +386,6 @@ h1 {
 }
 
 .about-us-right {margin-left: 26px;}
-
-/*.blog-news,
-.newsletter-subscription {
-  height: 220px;
-}*/
 
 .blog-news p {
   color: #5a5a5a;
@@ -491,6 +492,9 @@ h1 {
 .footer-info-right {
   float: left;
 }
+.footer-info-left{
+  position: relative;
+}
 
 .footer-social,
 .footer-info,
@@ -506,6 +510,14 @@ padding-top: 20px;
   margin-right: 236px;
 }
 
+.social-btn {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.5);
+}
+
 .footer-info-right {
   margin-left: 32px;
 }
@@ -513,6 +525,7 @@ padding-top: 20px;
 .footer-copyright {
   float: right;
 }
+
 .footer-copyright p {
   margin-top: 7px;
   margin-bottom: 0;
@@ -530,6 +543,55 @@ padding-top: 20px;
   display: table;
   clear: both;
 }
+
+/* Images from sprite */
+
+.social-btn-fb,
+.social-btn-inst,
+.social-btn-vk,
+.social-btn-twitter {
+  background: url('../img/gllacy-sprt.png') no-repeat;
+  background-position: 0px 0px;
+  width: 30px;
+  height: 30px;
+}
+
+.social-btn-inst {background-position: -150px 0px;}
+.social-btn-vk {background-position: -50px 0px;}
+.social-btn-twitter {background-position: -100px 0px;}
+
+.footer-info-link-for-suppliers::before {
+  background: url('../img/gllacy-sprt.png') no-repeat;
+  background-position: -200px 0px;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 15px;
+  height: 13px;
+  top:2px;
+  left: -22px;
+}
+
+.about-us-ic::before,
+.about-us-leaf::before,
+.about-us-cow::before,
+.about-us-term::before {
+	background: url('../img/gllacy-sprt.png') no-repeat;
+	background-position: 0px -40px;
+	position: absolute;
+	display: block;
+	content: "";
+	width: 42px;
+	height: 42px;
+	top: -12px;
+	left: 0px;
+}
+
+.about-us-leaf::before {background-position: -50px -40px;}
+.about-us-ic::before {background-position: -150px -40px;}
+.about-us-term::before {background-position: -100px -40px;}
+
+
 @font-face {
   font-family: Roboto;
   src: url(../fonts/roboto.woff);
