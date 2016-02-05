@@ -9,10 +9,15 @@
     <header>
       <div class="container clearfix">
         <div class="header-top-line clearfix">
-          <a class="logo-btn" href="#">gllacy</a>
+          <a class="logo-btn" href="#">
+            <span class="visually-hidden">gllacy</span>
+          </a>
           <nav class="main-menu">
             <ul>
-              <li class="main-menu-item"><a href="#">Каталог</a>
+              <li class="main-menu-item">
+                <a href="catalog.html">
+                  <span class="transparent-underline">Каталог</span> <!-- норм? -->
+                </a>
                 <ul class="sub-menu-catalog">
                   <li class="sub-menu-item">
                     <a href="#">Новинки</a>
@@ -32,12 +37,30 @@
                   </li>
                 </ul>
               </li>
-              <li class="main-menu-item"><a href="#">Доставка и оплата</a></li>
-              <li class="main-menu-item"><a href="#">О Компании</a></li>
+              <li class="main-menu-item">
+                <a href="#">
+                  <span class="transparent-underline">Доставка и оплата</span>
+                </a>
+              </li>
+              <li class="main-menu-item">
+                <a href="#">
+                  <span class="transparent-underline">О Компании</span>
+                </a>
+              </li>
             </ul>
           </nav>
           <div class="header-right">
-            <a href="#" class="btn"><img class="search-btn" src="img/Search.svg" alt="Поиск"></a>
+            <a href="#" class="btn search-btn">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+              <!-- <img class="search-btn" src="img/Search.svg" alt="Поиск"> -->
+            <!-- <form action="">
+              <label>search</label>
+              <div class="wrap">
+                <input type="text">
+                <button class="btn search-btn" type="submit">Поиск</button>
+              </div>
+            </form>-->
             <a class="btn entrance-btn" href="#">Вход</a>
             <a class="btn cart-btn" href="#">Пусто</a>
           </div>
@@ -249,29 +272,44 @@
     </main>
     <footer class="clearfix">
       <section class="footer-social">
-        <a class="social-btn social-btn-tweeter" href="#">tweeter</a>
-        <a class="social-btn social-btn-inst" href="#">instagram</a>
-        <a class="social-btn social-btn-fb" href="#">facebook</a>
-        <a class="social-btn social-btn-vk" href="#">vk.com</a>
+        <a class="social-btn social-btn-twitter" href="#">
+          <span class="visually-hidden">tweeter</span>
+        </a>
+        <a class="social-btn social-btn-inst" href="#">
+          <span class="visually-hidden">instagram</span>
+        </a>
+        <a class="social-btn social-btn-fb" href="#">
+          <span class="visually-hidden">facebook</span>
+        </a>
+        <a class="social-btn social-btn-vk" href="#">
+          <span class="visually-hidden">vk.com</span>
+        </a>
       </section>
       <section class="footer-info">
         <div class="footer-info-left">
-            <a href="#" class="footer-info-link-for-suppliers">
-              <b>Для поставщиков</b>
-            </a>
-            <a href="#">О производстве</a>
+          <a href="#" class="footer-info-link-for-suppliers">
+            <b class="transparent-underline">Для поставщиков</b>
+          </a>
+          <a href="#">
+            <span class="transparent-underline">О производстве</span>
+          </a>
         </div>
         <div class="footer-info-right">
-          <a href="#">Наши документы</a>
-          <a href="#">Экологические стандарты</a>
+          <a href="#">
+            <span class="transparent-underline">Наши документы</span>
+          </a>
+          <a href="#">
+            <span class="transparent-underline">Экологические стандарты</span>
+          </a>
         </div>
       </section>
       <section class="footer-copyright">
-        <a href="#">
-          <img src="img/htmlacademy.svg" alt="htmlacademy.ru"/>
+        <a class="htmlacademy-logo" href="#">
+          <span class="visually-hidden">htmlacademy.ru</span>
+          <!-- <img src="img/htmlacademy.svg" alt="htmlacademy.ru"/> -->
         </a>
         <p>
-          Сделано в <a href="#">HTML Academy</a> &copy; 2016
+          Сделано в <a class="transparent-underline" href="#">HTML Academy</a> &copy; 2016
         </p>
       </section>
     </footer>
