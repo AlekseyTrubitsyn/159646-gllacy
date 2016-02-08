@@ -842,9 +842,11 @@ input[type="checkbox"]:disabled:checked + label:hover::before {
 .list-pages-btn-current {
   background: none;
   height: 26px;
-  padding: 0 10px;
+  width: 26px;
+  box-sizing: border-box;
+  /*padding: 0 10px;*/
   border: none;
-  border-radius: 50%;
+  border-radius: 13px;
   font-size: 16px;
 }
 
@@ -860,9 +862,21 @@ input[type="checkbox"]:disabled:checked + label:hover::before {
 
 .list-pages-btn-prev,
 .list-pages-btn-next {
+  height: 26px;
+  width: 26px;
   font-size: 16px;
   background: none;
   border: none;
+  text-indent: -9999px;
+  background: url('../img/gllacy-sprt.png') no-repeat;
+  background-position: -194px -254px;
+  padding: 0;
+  /*width: 9px;*/
+  /*height: 14px;*/
+}
+
+.list-pages-btn-prev{
+  background-position: -194px -274px;
 }
 
 .list-pages-btn-prev:disabled,
