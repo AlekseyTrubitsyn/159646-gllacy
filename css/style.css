@@ -570,6 +570,18 @@ input[type="checkbox"]:checked + label::before {background-position: -120px -200
 
 input[type="checkbox"]:checked + label:hover::before {background-position: -120px -260px;}
 
+
+input[type="radio"]:disabled + label::before,
+input[type="radio"]:disabled + label:hover::before,
+input[type="radio"]:disabled:checked + label::before,
+input[type="radio"]:disabled:checked + label:hover::before,
+input[type="checkbox"]:disabled + label::before,
+input[type="checkbox"]:disabled + label:hover::before,
+input[type="checkbox"]:disabled:checked + label::before,
+input[type="checkbox"]:disabled:checked + label:hover::before {
+  opacity: 0.4;
+}
+
 /**/
 
 .ice-cream-item {float: left;}
