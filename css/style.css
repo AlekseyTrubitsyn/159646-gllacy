@@ -126,7 +126,8 @@ ul {
   padding: 0;
 }
 
-.header-top-line {line-height: 64px;}
+/*.header-top-line {line-height: 64px;}*/
+.header-top-line {line-height: 60px;}
 
 .logo-btn {
   float: left;
@@ -144,6 +145,8 @@ ul {
 	border-radius: 16px;
 	position: relative;
 	padding-left: 45px;
+  vertical-align: top;
+  margin-top: 14px;
 }
 
 /**/
@@ -158,25 +161,31 @@ ul {
   width: 1px;
 }
 
-.main-menu {float: left;}
+.main-menu {
+  float: left;
+  font-size: 0;
+}
 
 .main-menu-item {
   display: inline-block;
   position: relative;
+  vertical-align: top;
 }
 
-.header-right {float: right;}
+.header-right {
+  float: right;
+  font-size: 0;
+}
 
 .main-menu a {
 	display: inline-block;
 	height: 32px;
 	padding: 0 13px;
 	line-height: 32px;
+  font-size: 16px;
 }
 
-.main-menu-item:first-child {
-  margin-left: 15px;
-}
+.main-menu-item:first-child {margin-left: 15px;}
 
 .main-menu-item > a:hover {
   border-radius: 16px;
@@ -184,9 +193,7 @@ ul {
   color: #333;
 }
 
-.main-menu-item > a:active {
-  box-shadow: inset 0 1px 1px #696969;
-}
+.main-menu-item > a:active {box-shadow: inset 0 1px 1px #696969;}
 
 .main-menu-current {
   border-radius: 16px;
@@ -194,9 +201,7 @@ ul {
   color: #fff;
 }
 
-.main-menu-current span {
-  border-bottom: none;
-}
+.main-menu-current span {border-bottom: none;}
 
 /* Submenu */
 .main-menu ul > li ul {
@@ -234,10 +239,7 @@ ul {
   color: #fff;
 }
 
-.sub-menu-catalog li.sub-menu-current a {
-  color: white;
-  font-weight: 700;
-}
+.sub-menu-catalog li.sub-menu-current a {color: white;}
 
 .sub-menu-catalog li a {
 	display: block;
@@ -258,7 +260,7 @@ ul {
 
 .sub-menu-item:hover {background: #fbded6;}
 
-.sub-menu-item:active {background: #fbded6;}
+.sub-menu-item:active {background: #f6b5a5;}
 
 .sub-menu-catalog li:first-child:hover,
 .sub-menu-catalog li:first-child:active,
@@ -276,9 +278,7 @@ ul {
 
 /***/
 
-.header-right a {
-  margin-left: 10px;
-}
+.header-right a {margin-left: 10px;}
 
 .header-bottom-line p {
   padding: 0;
@@ -316,13 +316,13 @@ ul {
   border-bottom: 1px solid rgba(255,188,158,0.4);
 }
 
-.bread-crumbs span {
-  margin: 0 2px;
-}
+.bread-crumbs span {margin: 0 2px;}
 
 h1 {
-  margin-top: 8px;
-  margin-bottom: 35px;
+  /*margin-top: 8px;*/
+  /*margin-bottom: 35px;*/
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .slider {
@@ -386,10 +386,11 @@ h1 {
 .filters {
   float: left;
   height: 57px;
-  margin-bottom: 17px;
+  padding-bottom: 17px;
 }
 
 .filters:last-child {
+  padding-bottom: 0;
   margin-bottom: 18px;
   position: relative;
 }
@@ -398,21 +399,9 @@ h1 {
 
 .filter {margin-right: 15px;}
 
-select {
-  border: none;
-
-}
-
-option {
-	background: #fff;
-	padding: 5px 20px;
-	color: #333;
-	display: block;
-  border: none;
-}
-
 .filter-content,
-.filters-apply-button {
+.filters-apply-button,
+.filter-sort-current {
 	line-height: 36px;
 	background: rgba(255,255,255,0.4);
 	border-radius: 18px;
@@ -431,42 +420,21 @@ option {
   font-weight: 500;
 }
 
-.filters-apply-button {
-  position: absolute;
-  line-height: 32px;
-	border: 2px solid #fff;
-	bottom: 0;
-  font-weight: 500;
-}
-
-.filters-apply-button:hover {
-  line-height: 36px;
-  border: none;
-  background: #fafbfb;
-  color: #363636;
-}
-
-.filters-apply-button:active {
-  line-height: 36px;
-  border: none;
-  background: #ededed;
-  box-shadow: inset 0 2px 2px #696969;
-  color: #363636;
-}
-
 .filter-sort .filter-content {
-  background: none;
+	background: none;
+	padding: 0 0;
+	padding-bottom: 17px;
 }
 
-.filter-sort .filter-content p {
-  position: relative;
+.filter-sort .filter-sort-current {
   display: block;
+  position: relative;
+  padding-left: 16px;
   padding-right: 50px;
   cursor: pointer;
-  border: none;
 }
 
-.filter-sort .filter-content p:after {
+.filter-sort-current::after {
   content: "";
   position: absolute;
   width: 7px;
@@ -475,6 +443,39 @@ option {
   right: 15px;
   background: url('../img/gllacy-sprt.png') no-repeat;
   background-position: -200px -26px;
+}
+
+.filter-sort:hover .filter-sort-submenu {
+  display: block;
+}
+
+.filter-sort-submenu {
+  display: block;
+  display: none;
+  border-radius: 0;
+  background: #fff;
+  /*width: 100%;*/
+  width: 192px;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  opacity: 1;
+  z-index: 10;
+}
+
+.filter-sort-submenu li a {
+	color: #343434;
+	display: block;
+	padding: 4px 20px;
+	line-height: 16px;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+
+.filter-sort-submenu li a:hover {
+  background: #1e90ff;
+  color: #fff;
 }
 
 .filter-price .filter-content {
@@ -515,8 +516,15 @@ option {
   border-radius: 50%;
   position: absolute;
   cursor: pointer;
+  top: 8px;
+  left: 35px;
 }
 
+.filter-range-toggle:hover {transform: scale(1.1);}
+
+.filter-range-toggle:last-child {left: 133px;}
+
+/*
 #filter-range-min-toggle {
   top: 8px;
   left: 35px;
@@ -525,7 +533,7 @@ option {
 #filter-range-max-toggle {
   top: 8px;
   left: 133px;
-}
+}*/
 
 /* Checkboxes and radio buttons */
 
@@ -588,6 +596,29 @@ input[type="checkbox"]:disabled:checked + label:hover::before {
   opacity: 0.4;
 }
 
+
+.filters-apply-button {
+  position: absolute;
+  line-height: 32px;
+	border: 2px solid #fff;
+	bottom: 0;
+  font-weight: 500;
+}
+
+.filters-apply-button:hover {
+  line-height: 36px;
+  border: none;
+  background: #fafbfb;
+  color: #363636;
+}
+
+.filters-apply-button:active {
+  line-height: 36px;
+  border: none;
+  background: #ededed;
+  box-shadow: inset 0 2px 2px #696969;
+  color: #363636;
+}
 /**/
 
 .ice-cream-item {float: left;}
@@ -988,6 +1019,7 @@ footer .transparent-underline:active {
 	padding-left: 8px;
 	border-radius: 16px;
 	margin-bottom: -10px;
+  margin-top: 14px;
 }
 
 .header-right .search-btn:hover {
