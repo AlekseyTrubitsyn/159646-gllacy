@@ -1,5 +1,6 @@
-select::-ms-expand {
-    display: none;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -10,9 +11,7 @@ body {
  background: #849d8f;
 }
 
-.index-body{
-  background: #849d8f url(../img/light.jpg) no-repeat 50% 0%;
-}
+.index-body {background: #849d8f url(../img/light.jpg) no-repeat 50% 0%;}
 
 h1,
 h2,
@@ -67,7 +66,7 @@ header .btn,
   position: relative;
 }
 
-.ice-cream-item-price{
+.ice-cream-item-price {
   margin-top: -65px;
   margin-bottom: 0;
   font-size: 45px;
@@ -171,7 +170,6 @@ ul {
 .main-menu a {
 	display: inline-block;
 	height: 32px;
-	/*padding: 0 14px;*/
 	padding: 0 13px;
 	line-height: 32px;
 }
@@ -258,15 +256,9 @@ ul {
 
 .sub-menu-item-disabled a {cursor: default;}
 
-.sub-menu-catalog li:not(.sub-menu-item-disabled):hover {background: #fbded6;}
+.sub-menu-item:hover {background: #fbded6;}
 
-.sub-menu-catalog li:not(.sub-menu-item-disabled):active {background: #f6B5A5;}
-
-.sub-menu-catalog li:not(.sub-menu-item-disabled):hover a,
-.sub-menu-catalog li:not(.sub-menu-item-disabled):active {
-  color: #343434;
-  font-weight: 400;
-}
+.sub-menu-item:active {background: #fbded6;}
 
 .sub-menu-catalog li:first-child:hover,
 .sub-menu-catalog li:first-child:active,
@@ -356,7 +348,7 @@ h1 {
 	width: 280px;
 	line-height: 64px;
 	border-radius: 32px;
-	margin: auto;	
+	margin: auto;
 }
 
 .slider-buttons-block{
