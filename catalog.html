@@ -89,14 +89,29 @@
             <p class="filter-label">
               Сортировка:
             </p>
-            <div class="filter-content">
+            <select class="filter-content" name="sort-by" class="filter-content filter-sorting-select">
+              <option id="filter-sort-submenu-cheap" selected>по популярности</option>
+              <option id="filter-sort-submenu-cheap">снача недорогие</option>
+              <option id="filter-sort-submenu-expensive">снача дорогие</option>
+              <option id="filter-sort-submenu-fat">по жирности</option>
+            </select>
+            <!-- <ul class="filter-content filter-sorting-select">
+              <li>по популярности:
+                <select class="filter-sort-submenu">
+                    <option id="filter-sort-submenu-cheap">снача недорогие</option>
+                    <option id="filter-sort-submenu-expensive">снача дорогие</option>
+                    <option id="filter-sort-submenu-fat">по жирности</option>
+                </select>
+              </li>
+            </ul> -->
+            <!-- <div class="filter-content">
               <p>по популярности:</p>
               <div class="filter-sort-submenu">
                   <p id="filter-sort-submenu-cheap">снача недорогие</p>
                   <p id="filter-sort-submenu-expensive">снача дорогие</p>
                   <p id="filter-sort-submenu-fat">по жирности</p>
               </div>
-            </div>
+            </div> -->
           </div>
           <div class="filter filter-price">
             <p class="filter-label">
@@ -131,7 +146,7 @@
             <p class="filter-label">
               Наполнители:
             </p>
-            <div class="filter-content">
+            <div class="filter-content filter-checkboxes">
               <input name="filter-filler-checkbox" type="checkbox" id="filler-choco" checked>
               <label for="filler-choco">шоколадные</label>
               <input name="filter-filler-checkbox" type="checkbox" id="filler-sugar-powder" checked>

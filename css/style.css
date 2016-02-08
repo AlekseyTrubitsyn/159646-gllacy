@@ -1,3 +1,7 @@
+select::-ms-expand {
+    display: none;
+}
+
 body {
  font-family: 'Roboto', 'Helvetica', sans-serif;
  font-size: 16px;
@@ -391,27 +395,182 @@ h1 {
   height: 57px;
   margin-bottom: 17px;
 }
+
 .filters:last-child {
   margin-bottom: 18px;
+  position: relative;
 }
 
-.filters div {
-  float: left;
+.filters div {float: left;}
+
+.filter {margin-right: 15px;}
+
+.filter-content,
+.filters-apply-button {
+	line-height: 36px;
+	background: rgba(255,255,255,0.4);
+	border-radius: 18px;
+	padding: 0 16px;
+	margin-top: 5px;
 }
+
 .filters p {
   margin: 0;
   padding: 0;
 }
-/*.filter-sort{
-  width: 193px;
+
+.filters .filter-label {
+	padding: 0 16px;
+  font-size: 14px;
+  font-weight: 500;
 }
-.filter-price{
-  width: 218px;
+
+.filters-apply-button {
+  position: absolute;
+  line-height: 32px;
+	border: 2px solid #fff;
+	bottom: 0;
+  font-weight: 500;
 }
-.filter-price{
-  width: 218px;
-}*/
-.filter-sort-submenu {display: none;}
+
+.filters-apply-button:hover {
+  line-height: 36px;
+  border: none;
+  background: #fafbfb;
+  color: #363636;
+}
+
+.filters-apply-button:active {
+  line-height: 36px;
+  border: none;
+  background: #ededed;
+  box-shadow: inset 0 2px 2px #696969;
+  color: #363636;
+}
+
+.filter-sort .filter-content {
+  background: none;
+}
+
+.filter-sort .filter-content p {
+  position: relative;
+  display: block;
+  padding-right: 50px;
+  cursor: pointer;
+  border: none;
+}
+
+.filter-sort .filter-content p:after {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 5px;
+  top: 16px;
+  right: 15px;
+  background: url('../img/gllacy-sprt.png') no-repeat;
+  background-position: -200px -26px;
+}
+
+.filter-price .filter-content {
+	position: relative;
+	padding: 16px 15px;
+}
+
+.filter-price input {
+	background: none;
+	border: none;
+	color: white;
+	width: 45px;
+}
+
+.filter-range-scale {
+  display: block;
+  position: relative;
+  height: 4px;
+  width: 188px;
+  background: rgba(255,255,255,0.5);
+  cursor: pointer;
+}
+
+.filter-range-bar {
+  position: absolute;
+  left: 39px;
+  width: 78px;
+  height: 4px;
+  background: #f8f7f4;
+}
+
+.filter-range-toggle {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #f8f7f4;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+
+#filter-range-min-toggle {
+  top: 8px;
+  left: 35px;
+}
+
+#filter-range-max-toggle {
+  top: 8px;
+  left: 133px;
+}
+
+/* Checkboxes and radio buttons */
+
+.filter-content input[type="checkbox"],
+.filter-content input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  cursor: pointer;
+  padding-left: 32px;
+  padding-right: 20px;
+  position: relative;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  background: url('../img/gllacy-sprt.png') no-repeat;
+  background-position: -150px -230px;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 0;
+  top: 0;
+  background: url('../img/gllacy-sprt.png') no-repeat;
+	background-position: -150px -200px;
+}
+
+input[type="radio"] + label:hover::before {background-position: -150px -280px;}
+
+input[type="radio"]:checked + label::before {background-position: -120px -230px;}
+
+input[type="radio"]:checked + label:hover::before {background-position: -120px -280px;}
+
+input[type="checkbox"] + label:hover::before {background-position: -150px -260px;}
+
+input[type="checkbox"]:checked + label::before {background-position: -120px -200px;}
+
+input[type="checkbox"]:checked + label:hover::before {background-position: -120px -260px;}
+
+/**/
 
 .ice-cream-item {float: left;}
 
@@ -663,6 +822,7 @@ h1 {
   text-align: right;
   margin-top: 64px;
   margin-bottom: 38px;
+  font-size: 0;
   font-weight: 500;
 }
 
@@ -673,6 +833,7 @@ h1 {
   padding: 0 10px;
   border: none;
   border-radius: 50%;
+  font-size: 16px;
 }
 
 .list-pages-btn:hover {
@@ -680,12 +841,14 @@ h1 {
 }
 
 .list-pages-btn-current {
+  font-size: 16px;
   background: #fff;
   color: #353535;
 }
 
 .list-pages-btn-prev,
 .list-pages-btn-next {
+  font-size: 16px;
   background: none;
   border: none;
 }
