@@ -356,14 +356,14 @@ h1 {
 	width: 280px;
 	line-height: 64px;
 	border-radius: 32px;
-	margin: auto;
-	/* margin-top: 35px; */
+	margin: auto;	
 }
 
 .slider-buttons-block{
   position: absolute;
   left: 0;
   bottom: 83px;
+  font-size: 0;
 }
 
 .slider-button,
@@ -374,9 +374,10 @@ h1 {
   border-radius: 50%;
   border: 2px solid #fff;
   display: inline-block;
+  margin-right: 8px;
 }
 
-.slider-button-active {background: #fff;}
+.slider-radio-input:checked + .slider-button {background: #fff;}
 
 .slider-button:hover {
   background: rgba(255,255,255,0.4);
@@ -404,6 +405,19 @@ h1 {
 .filters div {float: left;}
 
 .filter {margin-right: 15px;}
+
+select {
+  border: none;
+
+}
+
+option {
+	background: #fff;
+	padding: 5px 20px;
+	color: #333;
+	display: block;
+  border: none;
+}
 
 .filter-content,
 .filters-apply-button {
@@ -523,20 +537,20 @@ h1 {
 
 /* Checkboxes and radio buttons */
 
-.filter-content input[type="checkbox"],
-.filter-content input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   display: none;
 }
 
 input[type="checkbox"] + label,
-input[type="radio"] + label {
+input[name="filter-fat-radio"] + label {
   cursor: pointer;
   padding-left: 32px;
   padding-right: 20px;
   position: relative;
 }
 
-input[type="radio"] + label::before {
+input[name="filter-fat-radio"] + label::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -558,11 +572,11 @@ input[type="checkbox"] + label::before {
 	background-position: -150px -200px;
 }
 
-input[type="radio"] + label:hover::before {background-position: -150px -280px;}
+input[name="filter-fat-radio"] + label:hover::before {background-position: -150px -280px;}
 
-input[type="radio"]:checked + label::before {background-position: -120px -230px;}
+input[name="filter-fat-radio"]:checked + label::before {background-position: -120px -230px;}
 
-input[type="radio"]:checked + label:hover::before {background-position: -120px -280px;}
+input[name="filter-fat-radio"]:checked + label:hover::before {background-position: -120px -280px;}
 
 input[type="checkbox"] + label:hover::before {background-position: -150px -260px;}
 
@@ -571,10 +585,10 @@ input[type="checkbox"]:checked + label::before {background-position: -120px -200
 input[type="checkbox"]:checked + label:hover::before {background-position: -120px -260px;}
 
 
-input[type="radio"]:disabled + label::before,
-input[type="radio"]:disabled + label:hover::before,
-input[type="radio"]:disabled:checked + label::before,
-input[type="radio"]:disabled:checked + label:hover::before,
+input[name="filter-fat-radio"]:disabled + label::before,
+input[name="filter-fat-radio"]:disabled + label:hover::before,
+input[name="filter-fat-radio"]:disabled:checked + label::before,
+input[name="filter-fat-radio"]:disabled:checked + label:hover::before,
 input[type="checkbox"]:disabled + label::before,
 input[type="checkbox"]:disabled + label:hover::before,
 input[type="checkbox"]:disabled:checked + label::before,
