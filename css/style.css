@@ -124,14 +124,16 @@ ul {
 }
 
 /*.header-top-line {line-height: 64px;}*/
-.header-top-line { line-height: 60px; }
+/*.header-top-line { line-height: 60px; }*/
+.header-top-line { padding-top: 14px; }
 
 .logo-btn {
-  float: left;
-  content: "";
-  width: 153px;
-  height: 64px;
-  margin-left: -6px;
+	float: left;
+	content: "";
+	width: 153px;
+	height: 64px;
+	margin-left: -6px;
+	margin-top: -14px;
 }
 
 .header-right .btn {
@@ -143,7 +145,8 @@ ul {
 	position: relative;
 	padding-left: 45px;
   vertical-align: top;
-  margin-top: 14px;
+  margin-bottom: 14px;
+  /*margin-top: 14px;*/
 }
 
 /**/
@@ -161,22 +164,25 @@ ul {
 .main-menu {
   float: left;
   font-size: 0;
+  max-width: 500px;
 }
 
 .main-menu-item {
   display: inline-block;
   position: relative;
   vertical-align: top;
+  padding-bottom: 15px;
 }
 
 .header-right {
   float: right;
   font-size: 0;
+  max-width: 450px;
 }
 
 .main-menu a {
 	display: inline-block;
-	height: 32px;
+	min-height: 32px;
 	padding: 0 13px;
 	line-height: 32px;
   font-size: 16px;
@@ -201,10 +207,10 @@ ul {
 .main-menu-current span { border-bottom: none; }
 
 /* Submenu */
-.main-menu ul > li ul {
+.sub-menu-catalog {
   display: none;
   position: absolute;
-  top: 55px;
+  top: 37px;
   left: -8px;
   background: #fff;
   border-radius: 5px;
@@ -215,12 +221,12 @@ ul {
   font-weight: 400;
 }
 
-.main-menu ul > li:hover ul { display: block; }
+.main-menu-item:hover .sub-menu-catalog { display: block; }
 
 .sub-menu-catalog li {
   text-align: left;
   display: block;
-  width: 143px;
+  min-width: 143px;
 }
 
 .sub-menu-catalog hr {
@@ -246,6 +252,7 @@ ul {
 	line-height: 20px;
 	padding: 9px 20px;
 	height: auto;
+  min-height: auto;
 	margin-left: 0;
 }
 
@@ -332,7 +339,7 @@ h1 {
 	margin-right: auto;
 	display: block;
 	width: 680px;
-	height: 584px;
+	min-height: 584px;
 	text-align: center;
 	padding-top: 310px;
 	box-sizing: border-box;
@@ -380,7 +387,7 @@ h1 {
 
 .filters {
   float: left;
-  height: 57px;
+  min-height: 57px;
   padding-bottom: 17px;
 }
 
@@ -445,7 +452,8 @@ h1 {
   display: none;
   border-radius: 0;
   background: #fff;
-  width: 192px;
+  min-width: 192px;  
+
   position: absolute;
   top: 38px;
   left: 0;
@@ -588,7 +596,7 @@ input[type="checkbox"]:disabled:checked + label:hover::before {
 .ice-cream-item a {
 	display: block;
 	width: 267px;
-	height: 320px;
+	min-height: 320px;
 	margin-right: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -638,7 +646,7 @@ input[type="checkbox"]:disabled:checked + label:hover::before {
 }
 
 .special-offer-btn {
-	height: 46px;
+	min-height: 46px;
 	line-height: 46px;
   border-radius: 46px;
   margin-bottom: 22px;
@@ -776,7 +784,7 @@ input[type="checkbox"]:disabled:checked + label:hover::before {
 
 .map-block {
 	display: block;
-	height: 306px;
+	min-height: 306px;
 	margin: 0;
 	padding-top: 65px;
 	padding-right: 27px;
@@ -819,7 +827,7 @@ input[type="checkbox"]:disabled:checked + label:hover::before {
 
 .map-form-btn {
 	width: 254px;
-	height: 45px;
+	min-height: 45px;
 	line-height: 45px;
 	border-radius: 22px;
   margin-top: 27px;
@@ -840,7 +848,7 @@ input[type="checkbox"]:disabled:checked + label:hover::before {
 .list-pages-btn,
 .list-pages-btn-current {
   background: none;
-  height: 26px;
+  min-height: 26px;
   width: 26px;
   box-sizing: border-box;
   /*padding: 0 10px;*/
@@ -859,7 +867,7 @@ input[type="checkbox"]:disabled:checked + label:hover::before {
 
 .list-pages-btn-prev,
 .list-pages-btn-next {
-  height: 26px;
+  min-height: 26px;
   width: 26px;
   font-size: 16px;
   background: none;
@@ -914,7 +922,7 @@ footer::before {
 .social-btn {
   display: inline-block;
   width: 31px;
-  height: 31px;
+  min-height: 31px;
   border-radius: 50%;
   border: 3px solid rgba(255,255,255,0.5);
 }
@@ -988,8 +996,8 @@ footer .transparent-underline:active {
 	padding-bottom: 8px;
 	padding-left: 8px;
 	border-radius: 16px;
-	margin-bottom: -10px;
-  margin-top: 14px;
+	/*margin-bottom: -10px;*/
+  /*margin-top: 14px;*/
 }
 
 .header-right .search-btn:hover {
