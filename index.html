@@ -51,17 +51,15 @@
             </ul>
           </nav>
           <div class="header-right">
-            <a href="#" class="btn search-btn">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-              <!-- <img class="search-btn" src="img/Search.svg" alt="Поиск"> -->
-            <!-- <form action="">
-              <label>search</label>
-              <div class="wrap">
-                <input type="text">
-                <button class="btn search-btn" type="submit">Поиск</button>
+            <form class="search-form" action="" method="post">
+              <label class="btn search-btn" for="search-field-input">
+                <span class="visually-hidden">Поиск</span>
+              </label>
+              <div class="search-field-box">
+                <input type="text" id="search-field-input" name="search-field" placeholder="Что ищем?">
+                <button class="header-red-btn search-field-submit" id="search-field-button" type="submit">Поиск</button>
               </div>
-            </form>-->
+            </form>
             <a class="btn entrance-btn" href="#">Вход</a>
             <a class="btn cart-btn" href="#">Пусто</a>
           </div>

@@ -128,25 +128,12 @@ ul {
 .header-top-line { padding-top: 14px; }
 
 .logo-btn {
-	float: left;
-	content: "";
-	width: 153px;
-	height: 64px;
-	margin-left: -6px;
-	margin-top: -14px;
-}
-
-.header-right .btn {
-	line-height: 32px;
-	display: inline-block;
-	background: rgba(255,255,255,0.2);
-	padding: 0 20px;
-	border-radius: 16px;
-	position: relative;
-	padding-left: 45px;
-  vertical-align: top;
-  margin-bottom: 14px;
-  /*margin-top: 14px;*/
+  float: left;
+  content: "";
+  width: 153px;
+  height: 64px;
+  margin-left: -6px;
+  margin-top: -14px;
 }
 
 /**/
@@ -172,12 +159,6 @@ ul {
   position: relative;
   vertical-align: top;
   padding-bottom: 15px;
-}
-
-.header-right {
-  float: right;
-  font-size: 0;
-  max-width: 450px;
 }
 
 .main-menu a {
@@ -237,14 +218,7 @@ ul {
   margin-left: 6px;
 }
 
-.sub-menu-catalog li.sub-menu-current {
-  background: #D07058;
-  color: #fff;
-}
-
-.sub-menu-catalog li.sub-menu-current a { color: white; }
-
-.sub-menu-catalog li a {
+.sub-menu-catalog a {
 	display: block;
 	color: #343434;
 	text-decoration: none;
@@ -255,6 +229,10 @@ ul {
   min-height: auto;
 	margin-left: 0;
 }
+
+.sub-menu-current { background: #D07058; }
+
+.sub-menu-current a { color: white; }
 
 .sub-menu-item-new { font-weight: 700; }
 
@@ -282,7 +260,65 @@ ul {
 
 /***/
 
+.header-right {
+  float: right;
+  font-size: 0;
+  max-width: 450px;
+}
+
 .header-right a { margin-left: 10px; }
+
+.header-right .btn {
+  line-height: 32px;
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 0 20px;
+  border-radius: 16px;
+  position: relative;
+  padding-left: 45px;
+  vertical-align: top;
+  margin-bottom: 14px;
+}
+
+.search-form {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding-left: 25px;
+}
+
+.search-field-box {
+  display: none;
+  position: absolute;
+  top: 37px;
+  right: 0;
+  border-radius: 4px;
+  background: #f8f7f4;
+  padding: 15px 16px;
+  box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+  white-space: nowrap;
+  z-index: 20;
+}
+
+.search-field-box input {
+  display: inline-block;
+  background: white;
+  color: #999999;
+  line-height: 25px;
+  border: 1px solid #d3d3d2;
+  border-radius: 4px;
+  width: 217px;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 6px 11px;
+}
+
+.search-field-submit {
+  margin-bottom: 1px;
+  margin-left: 15px;
+}
+
+.search-form:hover .search-field-box { display: block; }
 
 .header-bottom-line p {
   padding: 0;
@@ -452,7 +488,7 @@ h1 {
   display: none;
   border-radius: 0;
   background: #fff;
-  min-width: 192px;  
+  min-width: 192px;
 
   position: absolute;
   top: 38px;
@@ -497,11 +533,11 @@ h1 {
 }
 
 .filter-range-bar {
-  position: absolute;
-  left: 39px;
-  width: 78px;
-  height: 4px;
-  background: #f8f7f4;
+	position: absolute;
+	left: 30px;
+	width: 98px;
+	height: 4px;
+	background: #f8f7f4;
 }
 
 .filter-range-toggle {
@@ -555,17 +591,16 @@ input[type="checkbox"] + label,
   top: 0;
 }
 
-input[name="filter-fat-radio"]:disabled + label::before,
-input[name="filter-fat-radio"]:disabled + label:hover::before,
-input[name="filter-fat-radio"]:disabled:checked + label::before,
-input[name="filter-fat-radio"]:disabled:checked + label:hover::before,
-input[type="checkbox"]:disabled + label::before,
-input[type="checkbox"]:disabled + label:hover::before,
-input[type="checkbox"]:disabled:checked + label::before,
-input[type="checkbox"]:disabled:checked + label:hover::before {
+.filter-fat-radio-input:disabled + label::before,
+.filter-fat-radio-input :disabled + label:hover::before,
+.filter-fat-radio-input :disabled:checked + label::before,
+.filter-fat-radio-input :disabled:checked + label:hover::before,
+.filter-filler-checkbox-input:disabled + label::before,
+.filter-filler-checkbox-input:disabled + label:hover::before,
+.filter-filler-checkbox-input:disabled:checked + label::before,
+.filter-filler-checkbox-input:disabled:checked + label:hover::before {
   opacity: 0.4;
 }
-
 
 .filters-apply-button {
   position: absolute;
@@ -638,6 +673,22 @@ input[type="checkbox"]:disabled:checked + label:hover::before {
 }
 
 .btn-red:hover { background-image: linear-gradient(#f58669, #ec6f5e); }
+
+.header-red-btn {
+  display: inline-block;
+  min-height: 35px;
+  width: 102px;
+  padding: 5px 30px;
+  line-height: 25px;
+  color: #fefefe;
+  background-image: linear-gradient(#f06743,#e44a35);
+  box-shadow: 0 1px 2px #ac1000;
+  text-align: center;
+  border: none;
+  border-radius: 17px;
+  font-size: 15px;
+  font-weight: 700;
+}
 
 .btn-red:active {
     color: #FCEEEC;
