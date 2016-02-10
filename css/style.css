@@ -280,14 +280,20 @@ ul {
   margin-bottom: 14px;
 }
 
-.search-form {
+.search-form,
+.entrance-form {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  padding-left: 25px;
+   padding-left: 10px;
 }
 
-.search-field-box {
+.search-form { padding-left: 25px; }
+
+.entrance-form .entrance-btn { margin-left: 0; }
+
+.search-field-box,
+.entrance-fields-box {
   display: none;
   position: absolute;
   top: 37px;
@@ -300,7 +306,8 @@ ul {
   z-index: 20;
 }
 
-.search-field-box input {
+.search-field-box input,
+.entrance-form input {
   display: inline-block;
   background: white;
   color: #999999;
@@ -318,7 +325,42 @@ ul {
   margin-left: 15px;
 }
 
+.entrance-form input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.entrance-form input:last-of-type { margin-bottom: 15px; }
+
+.entrance-form .entrance-field-submit {
+  margin-left: 0;
+	float: left;
+}
+
+.entrance-forget-registration {
+	float: left;
+	padding-left: 9px;
+	margin-top: -3px;
+	margin-bottom: -3px;
+}
+
+.entrance-forget-registration a {
+	text-decoration: underline;
+	color: #333;
+	display: block;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 21px;
+}
+
+.entrance-forget-registration a:hover,
+.entrance-forget-registration a:active {
+  color: #ec593c;
+}
+
 .search-form:hover .search-field-box { display: block; }
+
+.entrance-form:hover .entrance-fields-box { display: block; }
 
 .header-bottom-line p {
   padding: 0;
@@ -564,7 +606,7 @@ input[type="radio"] {
   display: none;
 }
 
-input[type="checkbox"] + label,
+.filter-filler-checkbox-input + label,
 .filter-fat-radio-input + label {
   cursor: pointer;
   padding-left: 32px;
@@ -674,10 +716,16 @@ input[type="checkbox"] + label,
 
 .btn-red:hover { background-image: linear-gradient(#f58669, #ec6f5e); }
 
+.btn-red:active {
+    color: #fceeec;
+    background-image: linear-gradient(#d74632, #e1613e);
+    box-shadow: inset 0 2px 2px rgba(148,39,24,1);
+}
+
 .header-red-btn {
   display: inline-block;
   min-height: 35px;
-  width: 102px;
+  min-width: 102px;
   padding: 5px 30px;
   line-height: 25px;
   color: #fefefe;
@@ -688,12 +736,15 @@ input[type="checkbox"] + label,
   border-radius: 17px;
   font-size: 15px;
   font-weight: 700;
+  white-space: normal;
 }
 
-.btn-red:active {
-    color: #FCEEEC;
-    background-image: linear-gradient(#d74632, #e1613e);
-    box-shadow: inset 0 2px 2px rgba(148,39,24,1);
+.header-red-btn:hover { background-image: linear-gradient(#f48a6f, #e86857); }
+
+.header-red-btn:active {
+    color: #fceeec;
+    background-image: linear-gradient(#d84833, #e36c4b);
+    box-shadow: inset 0 2px 2px #942718;
 }
 
 .special-offer-btn {

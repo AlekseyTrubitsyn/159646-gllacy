@@ -61,7 +61,19 @@
                 <button class="header-red-btn search-field-submit" id="search-field-button" type="submit">Поиск</button>
               </div>
             </form>
-            <a class="btn entrance-btn" href="#">Вход</a>
+            <!-- <a class="btn entrance-btn" href="#">Вход</a> -->
+            <form class="entrance-form" action="" method="get">
+              <label class="btn entrance-btn" for="login-field-input">Вход</label>
+              <div class="entrance-fields-box">
+                <input type="text" id="login-field-input" name="login-field" placeholder="Электронная почта">
+                <input type="password" id="password-field-input" name="password-field" placeholder="Пароль">
+                <button class="header-red-btn entrance-field-submit" id="search-field-button" type="submit">Войти</button>
+                <div class="entrance-forget-registration">
+                  <a class="entrance-forget" href="">Забыли пароль?</a>
+                  <a class="entrance-registration" href="">Новая регистрация</a>
+                </div>
+              </div>
+            </form>
             <a class="btn cart-btn-filled" href="#">2 товара</a>
           </div>
         </div>
