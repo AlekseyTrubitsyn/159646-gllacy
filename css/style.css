@@ -314,10 +314,30 @@ ul {
   line-height: 25px;
   border: 1px solid #d3d3d2;
   border-radius: 4px;
-  width: 217px;
+  width: 241px;
+  /*width: 217px;*/
   font-size: 14px;
   font-weight: 400;
   padding: 6px 11px;
+  box-sizing: border-box;
+}
+
+.search-field-box input:hover,
+.entrance-form input:hover,
+.search-field-box input:focus,
+.entrance-form input:focus {
+  border: 2px solid rgba(154,154,154,0.52);
+  line-height: 23px;
+  padding-left: 10px;
+}
+
+.search-field-box input:focus,
+.entrance-form input:focus {
+  border: 2px solid rgba(46,136,228,0.52);
+}
+
+.search-field-box input:focus[value] {
+  color: transparent;
 }
 
 .search-field-submit {
@@ -670,7 +690,7 @@ input[type="radio"] {
 
 .ice-cream-item { float: left; }
 
-.ice-cream-item a {
+.ice-cream-item > a {
 	display: block;
 	width: 267px;
 	min-height: 320px;
@@ -679,16 +699,55 @@ input[type="radio"] {
 	padding-bottom: 20px;
 }
 
-.ice-cream-hits a { margin-right: 26px; }
+.ice-cream-hits > a { margin-right: 26px; }
 
-.ice-cream-item:last-child a,
-.ice-cream-hits:last-child a {
+.ice-cream-item:last-child > a,
+.ice-cream-hits:last-child > a {
   margin-right: 0;
 }
 
-.ice-cream-item-name{
+.ice-cream-item:last-child .catalog-item-overlay,
+.ice-cream-hits:last-child .catalog-item-overlay {
+  right: -5px;
+}
+
+.ice-cream-item-name {
   text-align: center;
   padding: 0 5px;
+}
+
+.catalog-item-overlay{
+  display: none;
+  position: absolute;
+  top: 15px;
+  left: -5px;
+  right: 15px;
+  bottom: -57px;
+  background: rgba(255,255,255,0.4);
+  box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.ice-cream-item:hover > a,
+.ice-cream-item-hit::before {
+  position: relative;
+  z-index: 2;
+ }
+
+ .ice-cream-item-hit::before { z-index: 3; }
+
+.ice-cream-item:hover .catalog-item-overlay { display: block; }
+
+.ice-cream-item .catalog-item-red-btn {
+	line-height: 35px;
+	min-height: 35px;
+	border-radius: 17px;
+	background-image: linear-gradient(#ed6b47, #e34632);
+	position: absolute;
+	bottom: 22px;
+	left: 15px;
+	right: 15px;
 }
 
 .special-offers {
@@ -872,6 +931,17 @@ input[type="radio"] {
   line-height: 42px;
   padding-left: 10px;
   float: left;
+  box-sizing: border-box;
+}
+
+.subscription-email-field:hover {
+  line-height: 40px;
+  border: 2px solid rgba(154,154,154,0.52);
+}
+
+.subscription-email-field:focus {
+  line-height: 40px;
+  border: 2px solid rgba(46,136,228,0.52);;
 }
 
 .newsletter-subscription-btn {
@@ -1050,6 +1120,12 @@ main .transparent-underline:active,
 footer .transparent-underline:active {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255,188,158,0.4);
+}
+
+.ice-cream-item .transparent-underline:hover,
+.ice-cream-item .transparent-underline:active {
+  color: rgb(236,89,60);
+  border-bottom: 1px solid rgba(236,89,60,0.4);
 }
 
 .clearfix::after{
