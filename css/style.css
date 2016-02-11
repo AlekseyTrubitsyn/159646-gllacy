@@ -292,8 +292,15 @@ ul {
 
 .entrance-form .entrance-btn { margin-left: 0; }
 
+.cart-box-btn {
+  position: relative;
+  display: inline-block;
+}
+
 .search-field-box,
-.entrance-fields-box {
+.entrance-fields-box,
+.cart-box {
+/*.header-hover-box {*/
   display: none;
   position: absolute;
   top: 37px;
@@ -381,6 +388,44 @@ ul {
 .search-form:hover .search-field-box { display: block; }
 
 .entrance-form:hover .entrance-fields-box { display: block; }
+
+.cart-box-btn:hover .cart-box { display: block; }
+
+.cart-box {
+  font-size: 13px;
+  color: #333;
+  font-weight: 400;
+}
+
+.cart-box-product-link {
+	font-size: 13px;
+	color: #333;
+	font-weight: 400;
+  width: 225px;
+  display: block;
+  white-space: normal;
+}
+
+.cart-box .cart-box-line { color: #cacac7; }
+
+.cart-box .cart-box-sum {
+  position: relative;
+	color: #fff;
+	font-size: 15px;
+	color: #333;
+	font-weight: 700;
+	text-align: right;
+  margin-top: 13px;
+  margin-bottom: 14px;
+}
+
+.cart-box .cart-box-submit {
+  	min-width: 162px;
+  	line-height: 18px;
+  	padding: 9px 23px;
+  	min-height: auto;
+    float: right;
+}
 
 .header-bottom-line p {
   padding: 0;
