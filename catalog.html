@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/placeholder-hiding.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -58,16 +57,18 @@
                 <span class="visually-hidden">Поиск</span>
               </label>
               <div class="search-field-box">
-                <input type="text" id="search-field-input" name="search-field" placeholder="Что ищем?">
+                <input class="input-hiding-placeholder" type="text" id="search-field-input" name="search-field" required>
+                <label class="hiding-placeholder" data="Что ищем?" for="search-field-input"></label>
                 <button class="header-red-btn search-field-submit" id="search-field-button" type="submit">Поиск</button>
               </div>
             </form>
-            <!-- <a class="btn entrance-btn" href="#">Вход</a> -->
             <form class="entrance-form" action="" method="get">
               <label class="btn entrance-btn" for="login-field-input">Вход</label>
               <div class="entrance-fields-box">
-                <input type="text" id="login-field-input" name="login-field" placeholder="Электронная почта">
-                <input type="password" id="password-field-input" name="password-field" placeholder="Пароль">
+                <input class="input-hiding-placeholder" type="text" id="login-field-input" name="login-field" required>
+                <label class="hiding-placeholder" data="Электронная почта" for="login-field-input"></label>
+                <input class="input-hiding-placeholder" type="password" id="password-field-input" name="password-field" required>
+                <label class="hiding-placeholder second-hiding-placeholder" data="Пароль" for="password-field-input"></label>
                 <button class="header-red-btn entrance-field-submit" id="search-field-button" type="submit">Войти</button>
                 <div class="entrance-forget-registration">
                   <a class="entrance-forget" href="">Забыли пароль?</a>
@@ -75,7 +76,6 @@
                 </div>
               </div>
             </form>
-            <!-- <a class="btn cart-btn-filled" href="#">2 товара</a> -->
             <div class="cart-box-btn">
               <a class="btn cart-btn-filled" href="#">2 товара</a>
               <div class="cart-box">

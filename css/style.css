@@ -300,7 +300,6 @@ ul {
 .search-field-box,
 .entrance-fields-box,
 .cart-box {
-/*.header-hover-box {*/
   display: none;
   position: absolute;
   top: 37px;
@@ -317,16 +316,16 @@ ul {
 .entrance-form input {
   display: inline-block;
   background: white;
-  color: #999999;
   line-height: 25px;
   border: 1px solid #d3d3d2;
   border-radius: 4px;
   width: 241px;
-  /*width: 217px;*/
   font-size: 14px;
   font-weight: 400;
   padding: 6px 11px;
   box-sizing: border-box;
+  color: #353535;
+  font-weight: 700;
 }
 
 .search-field-box input:hover,
@@ -343,8 +342,49 @@ ul {
   border: 2px solid rgba(46,136,228,0.52);
 }
 
-.search-field-box input:focus[value] {
-  color: transparent;
+.entrance-fields-box { padding-top: 20px; }
+
+.hiding-placeholder {
+  position: absolute;
+  top: 30px;
+  left: 32px;
+  color: #9b9b9b;
+  pointer-events: none;
+  transition: transform 50ms ease;
+  transform: translateY(-26px);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.search-field-box .hiding-placeholder { top: 25px; }
+
+.second-hiding-placeholder { top: 80px; }
+
+.newsletter-subscription .hiding-placeholder {
+  top: auto;
+  bottom: 54px;
+  left: 36px;
+}
+
+.hiding-placeholder:before {
+  content: attr(data);
+  white-space: nowrap;
+}
+
+.input-hiding-placeholder:invalid + .hiding-placeholder {
+  transform: translateY(0);
+  font-size: 16px;
+}
+
+.input-hiding-placeholder:focus + .hiding-placeholder {
+  transform: translateY(-26px);
+  font-size: 11px;
+  color: #2b96f1;
+}
+
+.subscription-email-field + .hiding-placeholder,
+.subscription-email-field:focus + .hiding-placeholder {
+  transform: translateY(-33px);
 }
 
 .search-field-submit {
@@ -971,6 +1011,7 @@ input[type="radio"] {
 }
 
 .newsletter-subscription {
+  position: relative;
   padding-top: 37px;
   padding-left: 26px;
   padding-bottom: 40px;
