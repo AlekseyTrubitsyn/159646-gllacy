@@ -51,7 +51,7 @@
             </ul>
           </nav>
           <div class="header-right">
-            <form class="search-form" action="" method="post">
+            <form class="search-form" action="" method="get">
               <label class="btn search-btn" for="search-field-input">
                 <span class="visually-hidden">Поиск</span>
               </label>
@@ -61,7 +61,7 @@
                 <button class="header-red-btn search-field-submit" id="search-field-button" type="submit">Поиск</button>
               </div>
             </form>
-            <form class="entrance-form" action="" method="get">
+            <form class="entrance-form" action="" method="post">
               <label class="btn entrance-btn" for="login-field-input">Вход</label>
               <div class="entrance-fields-box">
                 <input class="input-hiding-placeholder" type="text" id="login-field-input" name="login-field" required>
@@ -88,7 +88,7 @@
     </header>
     <main>
       <div class="slider">
-        <form method="get" action="" class="slider-buttons-block">
+        <form class="slider-buttons-block" action="" method="post">
           <input class="slider-radio-input" name="slider-radio" type="radio" id="slider-first-item" checked>
           <label class="slider-button" for="slider-first-item"></label>
           <input class="slider-radio-input" name="slider-radio" type="radio" id="slider-second-item">
@@ -212,7 +212,7 @@
             к столу
           </a>
         </section>
-        <form class="special-offer-right newsletter-subscription clearfix" method="post" action="">
+        <form class="special-offer-right newsletter-subscription clearfix" action="" method="post">
           <label class="newsletter-subscription-text" for="newsletter-subscription-field">
               Подпишитесь на нашу сладкую рассылку и будете всегда в курсе
               всего самого вкусного, что у нас происходит. Обещаем не спамить
@@ -283,7 +283,7 @@
       </section>
       <section class="footer-copyright">
         <a class="htmlacademy-logo" href="#">
-          <span class="visually-hidden">htmlacademy.ru</span>          
+          <span class="visually-hidden">htmlacademy.ru</span>
         </a>
         <p>
           Сделано в <a class="transparent-underline" href="#">HTML Academy</a> &copy; 2016
