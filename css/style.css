@@ -1262,11 +1262,111 @@ footer .transparent-underline:active {
   border-bottom: 1px solid rgba(236,89,60,0.4);
 }
 
+.feedback-form {
+  /*display: block;*/
+  display: none;
+  position: absolute;
+  width: 478px;
+  min-height: 442px;
+  box-sizing: border-box;
+  top: 338px;
+  left: 50%;
+  margin-left: -239px;
+  background: #f8f7f4;
+  padding: 19px 25px;
+  padding-bottom: 26px;
+  border-radius: 9px;
+  z-index: 10;
+}
+
+.feedback-form-overlay {
+  display: none;
+  top:0;
+  right: 0;
+  bottom:0;
+  left:0;
+  position: fixed;
+  background: rgba(0,0,0,0.3);
+  z-index: 9;
+  cursor: pointer;
+}
+
+.feedback-form-inside { position: relative; }
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  color: #353535;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding: 12px 15px;
+  border-radius: 4px;
+  border: none;
+  border: 1px solid #b2b2b2;
+  height: 153px;
+  margin-bottom: 20px;
+  max-width: 100%;
+  min-width: 60%;
+}
+
+.feedback-form textarea { min-height: 42px; }
+
+.feedback-form input {
+  width: 267px;
+  height: 42px;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover,
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border: 2px solid rgba(154,154,154,0.52);
+  padding: 11px 14px;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border: 2px solid rgba(46,136,228,0.52);
+}
+
+.feedback-form-hiding-placeholder {
+  left: 16px;
+  top: 11px;
+}
+
+.feedback-form-hiding-placeholder:nth-of-type(2) { top: 73px; }
+
+.feedback-form-hiding-placeholder:nth-of-type(3) { top: 135px; }
+
+.feedback-form button {
+  margin-top: 5px;
+  border-radius: 22px;
+  min-width: 44px;
+  border: none;
+  padding: 12px 27px;
+  font-weight: 700;
+  font-size: 17px;
+  float: right;
+}
+
+.feedback-form h2 {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #343434;
+  max-width: 408px;
+  overflow: hidden;
+}
+
 .clearfix::after{
   content: "";
   display: table;
   clear: both;
 }
+
+.popup-visible { display: block; }
 
 /* Images from sprite */
 
@@ -1293,7 +1393,8 @@ footer .transparent-underline:active {
 .social-btn-vk,
 .social-btn-twitter,
 .footer-info-link-for-suppliers::before,
-.htmlacademy-logo {
+.htmlacademy-logo,
+.popup-form:after {
   background: url('../img/gllacy-sprt.png') no-repeat;
 }
 
@@ -1456,6 +1557,18 @@ footer .transparent-underline:active {
   background-position: 0px -160px;
   width: 109px;
   height: 37px;
+}
+
+.popup-form:after {
+  background-position: -40px -280px;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 17px;
+  height: 17px;
+  top:15px;
+  right: 25px;
+  cursor: pointer;
 }
 
 @font-face {
