@@ -210,12 +210,16 @@ ul {
   min-width: 143px;
 }
 
-.sub-menu-catalog hr {
-  color: silver;
-  margin-top: 0;
-  margin-right: 9px;
-  margin-bottom: 0;
-  margin-left: 6px;
+.sub-menu-item-new::after {
+	content: "";
+	background: rgba(53,53,53,0.2);
+	height: 1px;
+	margin-top: 0;
+	margin-right: 9px;
+	margin-bottom: 0;
+	margin-left: 6px;
+	display: block;	
+	opacity: 1;
 }
 
 .sub-menu-catalog a {
@@ -236,9 +240,10 @@ ul {
 
 .sub-menu-item-new { font-weight: 700; }
 
-.sub-menu-item-disabled { opacity: 0.16; }
-
-.sub-menu-item-disabled a { cursor: default; }
+.sub-menu-item-disabled a {
+  cursor: default;
+  opacity: 0.16;
+}
 
 .sub-menu-item:hover { background: #fbded6; }
 
