@@ -218,7 +218,7 @@ ul {
 	margin-right: 9px;
 	margin-bottom: 0;
 	margin-left: 6px;
-	display: block;	
+	display: block;
 	opacity: 1;
 }
 
@@ -325,11 +325,10 @@ ul {
   line-height: 25px;
   border: 1px solid #d3d3d2;
   border-radius: 4px;
-  width: 241px;
+  width: 217px;
   font-size: 14px;
   font-weight: 400;
   padding: 6px 11px;
-  box-sizing: border-box;
   color: #353535;
   font-weight: 700;
 }
@@ -339,8 +338,7 @@ ul {
 .search-field-box input:focus,
 .entrance-form input:focus {
   border: 2px solid rgba(154,154,154,0.52);
-  line-height: 23px;
-  padding-left: 10px;
+	padding: 5px 10px;
 }
 
 .search-field-box input:focus,
@@ -376,7 +374,7 @@ ul {
 }
 
 .hiding-placeholder:before {
-  content: attr(data);
+  content: attr(data-first);
   white-space: nowrap;
 }
 
@@ -493,9 +491,14 @@ ul {
 
 .cart-box-td-count-price span { color: #808080; }
 
-.cart-box .cart-box-line {
-  color: #cacac7;
-  margin-top: 8px;
+.cart-box .cart-box-sum::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #cacac7;
+  position: relative;
+  top: -10px;
+  right: -10px;
 }
 
 .cart-box .cart-box-sum {
@@ -505,8 +508,9 @@ ul {
 	color: #333;
 	font-weight: 700;
 	text-align: right;
-  margin-top: 13px;
+  margin-top: 21px;
   margin-bottom: 14px;
+  margin-right: 10px;
 }
 
 .cart-box .cart-box-submit {
@@ -1304,7 +1308,7 @@ footer .transparent-underline:active {
   color: #353535;
   font-weight: 700;
   box-sizing: border-box;
-  padding: 12px 15px;
+  padding: 9px 15px;
   border-radius: 4px;
   border: none;
   border: 1px solid #b2b2b2;
@@ -1326,7 +1330,7 @@ footer .transparent-underline:active {
 .feedback-form input:focus,
 .feedback-form textarea:focus {
   border: 2px solid rgba(154,154,154,0.52);
-  padding: 11px 14px;
+  padding: 8px 14px;
 }
 
 .feedback-form input:focus,
