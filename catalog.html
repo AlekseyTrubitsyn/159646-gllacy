@@ -141,7 +141,7 @@
               Сортировка:
             </p>
             <ul class="filter-content">
-              <li class="filter-sort-current"><span>по популярности:</span>
+              <li class="filter-sort-current"><span>по популярности</span>
                 <ul class="filter-sort-submenu">
                   <li id="filter-sort-submenu-cheap"><a href="#">снача недорогие</a></li>
                   <li id="filter-sort-submenu-expensive"><a href="#">снача дорогие</a></li>
@@ -351,14 +351,20 @@
           </div>
         </article>
       </div>
-      <div class="list-pages">
-        <button class="list-pages-btn-prev" disabled>&#60;</button>
-        <button class="list-pages-btn-current">1</button>
-        <button class="list-pages-btn">2</button>
-        <button class="list-pages-btn">3</button>
-        <button class="list-pages-btn">4</button>
-        <button class="list-pages-btn">5</button>
-        <button class="list-pages-btn-next">&#62;</button>
+      <div class="list-pages clearfix">
+        <div class="container-to-right clearfix">
+          <button class="list-pages-btn-prev" disabled>
+            <span class="visually-hidden">&#60;</span>
+          </button>
+          <button class="list-pages-btn-current">1</button>
+          <button class="list-pages-btn">2</button>
+          <button class="list-pages-btn">3</button>
+          <button class="list-pages-btn">4</button>
+          <button class="list-pages-btn">5</button>
+          <button class="list-pages-btn-next">
+            <span class="visually-hidden">&#62;</span>
+          </button>
+        </div>
       </div>
     </main>
     <footer class="clearfix">
@@ -414,6 +420,7 @@
         <label class="hiding-placeholder feedback-form-hiding-placeholder" data-first="Напишите что-нибудь..." for="feedback-guest-textarea-input"></label>
         <button class="btn-red" id="feedback-form-button" type="submit">Отправить</button>
       </div>
+      <div class="popup-form-close-btn"></div>
     </form>
     <div class="feedback-form-overlay" title="Закрыть окно!"></div>
   </body>
