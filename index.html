@@ -5,6 +5,8 @@
     <title>HTML Academy: Глейси</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/interactive-map.js" type="text/javascript"></script>
   </head>
   <body class="index-body">
     <header>
@@ -17,7 +19,7 @@
             <ul>
               <li class="main-menu-item">
                 <a href="catalog.html">
-                  <span class="transparent-underline">Каталог</span> <!-- норм? -->
+                  <span class="transparent-underline">Каталог</span>
                 </a>
                 <ul class="sub-menu-catalog">
                   <li class="sub-menu-item-new sub-menu-item-disabled">
@@ -224,7 +226,10 @@
           </button>
         </form>
       </div>
-      <div class="map-block clearfix">
+    </main>
+      <!-- <div class="map-block clearfix"> -->
+    <div class="map-block map-block-interactive clearfix" id="map">
+      <div class="container-to-center">
         <section class="map-address-block">
           <p>
             Адрес главного офиса и
@@ -246,7 +251,8 @@
           <a href="#" class="btn-red map-form-btn">Форма обратной связи</a>
         </section>
       </div>
-    </main>
+    </div>
+    <!-- </main> -->
     <footer class="clearfix">
       <section class="footer-social">
         <a class="social-btn social-btn-twitter" href="#">
@@ -303,6 +309,6 @@
       <div class="popup-form-close-btn"></div>
     </form>
     <div class="feedback-form-overlay" title="Закрыть окно!"></div>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
   </body>
 </html>

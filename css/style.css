@@ -132,7 +132,8 @@ footer {
 
 header,
 main,
-footer {
+footer,
+.container-to-center {
   box-sizing: border-box;
   width: 1200px;
   margin: auto;
@@ -1164,13 +1165,19 @@ input[type="radio"] {
 	min-height: 306px;
 	margin: 0;
   margin-top: 40px;
-	padding-top: 65px;
 	padding-right: 27px;
-	padding-bottom: 59px;
 	background: url(../img/map.jpg); /* Это карта, цветовой фон неуместен */
 	position: relative;
-	margin-left: -27px;
+  margin-left: -27px;
 	margin-right: -27px;
+}
+
+.map-block-interactive {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+  min-height: 430px;
 }
 
 .map-block::before {
@@ -1185,7 +1192,6 @@ input[type="radio"] {
 }
 
 .map-address-block {
-	float: right;
 	background: #fdfefe;
 	border-radius: 12px;
 	width: 302px;
@@ -1193,6 +1199,17 @@ input[type="radio"] {
 	padding-right: 25px;
 	padding-left: 25px;
 	box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  margin-left: 271px;
+  z-index: 3000;
+  top: 65px;
+}
+
+.map-address-block-to-interactive-map {
+  position: absolute;
+
+  margin-top: -364px;
 }
 
 .map-address-block p {
@@ -1465,6 +1482,8 @@ footer .transparent-underline:active {
 
 .popup-visible { display: block; }
 
+.popup-error { animation: shake 0.4s; }
+
 /* Images from sprite */
 
 .logo-btn,
@@ -1680,6 +1699,18 @@ footer .transparent-underline:active {
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
   }
 }
 
