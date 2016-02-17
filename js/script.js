@@ -12,6 +12,14 @@ var feedbackEmailFromLocalStorage = localStorage.getItem("feedbackEmailInput");
 
 var popupCloseBtn = document.querySelector(".popup-form-close-btn");
 
+var mapBlock = document.querySelector(".map-block");
+var ymap = document.querySelector("ymap");
+
+if (ymaps) {
+  mapBlock.classList.add("map-block-interactive");
+}  /* По умолчанию карта нормальных размеров - картинкой с макета,
+      если загрузились карты Яндекса - интерактив на всю ширину */
+
 feedbackButton.addEventListener("click", function(event) {
   event.preventDefault();
   feedbackForm.classList.add("popup-visible");

@@ -1161,15 +1161,13 @@ input[type="radio"] {
 }
 
 .map-block {
-	display: block;
-	min-height: 306px;
-	margin: 0;
+  display: block;
+  position: relative;
+  width: 1200px;
+  min-height: 430px;
+  margin: 0 auto;
   margin-top: 40px;
-	padding-right: 27px;
-	background: url(../img/map.jpg); /* Это карта, цветовой фон неуместен */
-	position: relative;
-  margin-left: -27px;
-	margin-right: -27px;
+  background: url(../img/map.jpg); /* Это карта, цветовой фон неуместен */
 }
 
 .map-block-interactive {
@@ -1177,7 +1175,6 @@ input[type="radio"] {
   margin-left: 0;
   margin-right: 0;
   padding: 0;
-  min-height: 430px;
 }
 
 .map-block::before {
@@ -1208,7 +1205,6 @@ input[type="radio"] {
 
 .map-address-block-to-interactive-map {
   position: absolute;
-
   margin-top: -364px;
 }
 
@@ -1345,7 +1341,6 @@ footer::before {
   background: rgba(255,255,255,0.8);
   border: 3px solid rgba(255,255,255,0.5);
 }
-
 
 .footer-info-right { margin-left: 32px; }
 
