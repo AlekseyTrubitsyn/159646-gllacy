@@ -89,21 +89,27 @@
     </header>
     <main>
       <div class="slider">
-        <form class="slider-buttons-block" action="index.html" method="post">
-          <input class="slider-radio-input" name="slider-radio" type="radio" id="slider-first-item" checked>
-          <label class="slider-button" for="slider-first-item"></label>
-          <input class="slider-radio-input" name="slider-radio" type="radio" id="slider-second-item">
-          <label class="slider-button" for="slider-second-item"></label>
-          <input class="slider-radio-input" name="slider-radio" type="radio" id="slider-third-item">
-          <label class="slider-button" for="slider-third-item"></label>
-        </form>
-        <div class="slider-image-and-text">
-          <p class="slider-text">
-            Крем-брюле и пломбир<br>
-            с малиновым джемом
-          </p>
+        <input class="slider-radio-input" name="slider-radio" type="radio" id="slider-first-button" checked>
+        <input class="slider-radio-input" name="slider-radio" type="radio" id="slider-second-button">
+        <input class="slider-radio-input" name="slider-radio" type="radio" id="slider-third-button">
+        <div class="slider-buttons-block">
+          <label class="slider-button" for="slider-first-button"></label>
+          <label class="slider-button" for="slider-second-button"></label>
+          <label class="slider-button" for="slider-third-button"></label>
+        </div>
+        <div class="slide" id="first-slide">
+          <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
           <a class="btn-red slider-image-button" href="#">Давайте оба!</a>
         </div>
+        <div class="slide" id="second-slide">
+          <p class="slider-text">Шоколадный пломбир и лимонный сорбет</p>
+          <a class="btn-red slider-image-button" href="#">Давайте оба!</a>
+        </div>
+        <div class="slide" id="third-slide">
+          <p class="slider-text">Пломбир с помадкой и клубничный щербет</p>
+          <a class="btn-red slider-image-button" href="#">Давайте оба!</a>
+        </div>
+        <div class="background-layer"></div>
       </div>
       <div class="special-offers clearfix">
         <section class="special-offer-left raspberry">

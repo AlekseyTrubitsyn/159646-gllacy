@@ -81,7 +81,10 @@ header .btn,
 	margin: 0;
 	margin-top: -4px;
 	margin-bottom: 30px;
-	line-height: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  line-height: 60px;
 }
 
 .ice-cream-item { position: relative; }
@@ -141,7 +144,17 @@ footer,
   padding-right: 27px;
 }
 
-header { margin-top: 9px; }
+header {
+  z-index: 3;
+  margin-top: 9px;
+}
+
+.index-body header {
+  position: absolute;
+  top:0;
+  left: 50%;
+  margin-left: -600px;
+}
 
 a {
   text-decoration: none;
@@ -608,20 +621,51 @@ h1 {
 .slider {
   display: block;
   position: relative;
+  min-height: 646px;
 }
 
-.slider-image-and-text {
-	margin-top: -34px;
-	margin-bottom: -20px;
+.background-layer {
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  transition: background-color 1s ease;
+  z-index: -10;
+}
+
+.slide {
+	display: none;
+	margin-bottom: -234px;
 	margin-left: auto;
 	margin-right: auto;
-	display: block;
-	width: 680px;
-	min-height: 584px;
 	text-align: center;
-	padding-top: 310px;
+	padding-top: 395px;
 	box-sizing: border-box;
-	background: url(../img/ice-cream-big.png) no-repeat 50% 28%; /* Это слайдер, цветовой фон неуместен */
+	z-index: -1;
+	background: url(../img/ic-big-1.png) no-repeat 50% 0%;
+	padding-bottom: 275px;
+  transition: background-image 0.5s ease;
+}
+
+.slide:before,
+.slide::after {
+  content: "";
+  visibility: hidden;
+}
+
+#first-slide {
+  background-image: url(../img/ic-big-1.png);
+}
+
+#second-slide,
+.slide:before {
+  background-image: url(../img/ic-big-2.png);
+}
+
+#third-slide,
+.slide::after {
+  background-image: url(../img/ic-big-3.png);
 }
 
 .slider-image-button {
@@ -634,12 +678,13 @@ h1 {
 .slider-buttons-block {
   position: absolute;
   left: 0;
-  bottom: 83px;
+  top: 563px;
   font-size: 0;
 }
 
-.slider-button,
-.slider-button-active {
+.slider-radio-input { display: none; }
+
+.slider-button {
   width: 21px;
   height: 21px;
   box-sizing: border-box;
@@ -650,7 +695,21 @@ h1 {
   margin-right: 8px;
 }
 
-.slider-radio-input:checked + .slider-button { background: #fff; }
+#slider-first-button:checked ~ .slider-buttons-block .slider-button[for="slider-first-button"],
+#slider-second-button:checked ~ .slider-buttons-block .slider-button[for="slider-second-button"],
+#slider-third-button:checked ~ .slider-buttons-block .slider-button[for="slider-third-button"] {
+  background-color: #ffffff;
+}
+
+#slider-first-button:checked ~ .background-layer { background-color: #849d8f; }
+#slider-second-button:checked ~ .background-layer { background-color: #8c95a4; }
+#slider-third-button:checked ~ .background-layer { background-color: #978a83; }
+
+#slider-first-button:checked ~ #first-slide,
+#slider-second-button:checked ~ #second-slide,
+#slider-third-button:checked ~ #third-slide {
+  display: block;
+}
 
 .slider-button:hover {
   background: rgba(255,255,255,0.4);
