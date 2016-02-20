@@ -409,18 +409,21 @@ ul {
   color: #9b9b9b;
   pointer-events: none;
   transition: transform 50ms ease;
-  transform: translateY(-26px);
+  transform: translateY(-24px);
   font-size: 11px;
   font-weight: 400;
 }
 
 .search-field-box .hiding-placeholder { top: 25px; }
 
-.second-hiding-placeholder { top: 80px; }
+.second-hiding-placeholder {
+  top: 80px;
+  transform: translateY(-23px);
+}
 
 .newsletter-subscription .hiding-placeholder {
   top: auto;
-  bottom: 54px;
+  bottom: 52px;
   left: 36px;
 }
 
@@ -435,10 +438,12 @@ ul {
 }
 
 .input-hiding-placeholder:focus + .hiding-placeholder {
-  transform: translateY(-26px);
+  transform: translateY(-24px);
   font-size: 11px;
   color: #2b96f1;
 }
+
+.input-hiding-placeholder:focus + .second-hiding-placeholder { transform: translateY(-23px); }
 
 .subscription-email-field + .hiding-placeholder,
 .subscription-email-field:focus + .hiding-placeholder {
@@ -567,7 +572,7 @@ ul {
 .cart-box .cart-box-submit {
 	min-width: 115px;
 	line-height: 18px;
-	padding: 8px 22px;  
+	padding: 8px 22px;
 	min-height: auto;
   float: right;
 }
