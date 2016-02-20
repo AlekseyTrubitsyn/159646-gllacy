@@ -16,9 +16,9 @@ var searchBtn = document.querySelector("#search-form-button");
 var searchBox = document.querySelector(".search-field-box");
 
 var mapBlock = document.querySelector(".map-block");
-var ymap = document.querySelector("ymap");
+var interactiveMap = document.querySelector("ymap");
 
-if (ymaps) {
+if (interactiveMap) {
   mapBlock.classList.add("map-block-interactive");
 }  /* По умолчанию карта нормальных размеров - картинкой с макета,
       если загрузились карты Яндекса - интерактив на всю ширину */
