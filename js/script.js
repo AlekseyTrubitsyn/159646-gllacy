@@ -12,6 +12,9 @@ var feedbackEmailFromLocalStorage = localStorage.getItem("feedbackEmailInput");
 
 var popupCloseBtn = document.querySelector(".popup-form-close-btn");
 
+var searchBtn = document.querySelector("#search-form-button");
+var searchBox = document.querySelector(".search-field-box");
+
 var mapBlock = document.querySelector(".map-block");
 var ymap = document.querySelector("ymap");
 
@@ -19,6 +22,11 @@ if (ymaps) {
   mapBlock.classList.add("map-block-interactive");
 }  /* По умолчанию карта нормальных размеров - картинкой с макета,
       если загрузились карты Яндекса - интерактив на всю ширину */
+
+if (searchBtn && searchBox) {
+  searchBtn.classList.add("hide-this");
+  searchBox.classList.add("search-field-box-auto-width");
+}
 
 feedbackButton.addEventListener("click", function(event) {
   event.preventDefault();

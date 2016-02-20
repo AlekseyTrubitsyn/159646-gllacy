@@ -366,6 +366,7 @@ ul {
   z-index: 20;
 }
 .search-field-box { min-width: 360px; }
+.search-field-box-auto-width { min-width: auto; }
 
 .search-field-box input,
 .entrance-form input {
@@ -564,9 +565,9 @@ ul {
 }
 
 .cart-box .cart-box-submit {
-	min-width: 162px;
+	min-width: 115px;
 	line-height: 18px;
-	padding: 9px 23px;
+	padding: 8px 22px;  
 	min-height: auto;
   float: right;
 }
@@ -1562,6 +1563,8 @@ footer .transparent-underline:active {
 .popup-visible { display: block; }
 
 .popup-error { animation: shake 0.4s; }
+
+.hide-this { display: none; }
 
 /* Images from sprite */
 
