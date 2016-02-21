@@ -1295,7 +1295,7 @@ input[type="radio"] {
   position: absolute;
   left: 50%;
   margin-left: 271px;
-  z-index: 3000;
+  z-index: 3;
   top: 65px;
 }
 
