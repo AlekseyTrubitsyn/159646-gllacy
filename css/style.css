@@ -4,20 +4,20 @@ img {
 
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 input[type=number] {
-    -moz-appearance:textfield;
+  -moz-appearance:textfield;
 }
 
 body {
- font-family: Roboto, Helvetica, sans-serif;
- font-size: 16px;
- font-weight: 400;
- color: #fff;
- background: #849d8f;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  background: #849d8f;
 }
 
 .index-body { background: #849d8f url(../img/light.jpg) no-repeat 50% 0%; }
@@ -77,10 +77,10 @@ header .btn,
 }
 
 .slider-text {
-	font-size: 60px;
-	margin: 0;
-	margin-top: -4px;
-	margin-bottom: 30px;
+  font-size: 60px;
+  margin: 0;
+  margin-top: -4px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 700px;
@@ -206,17 +206,17 @@ ul {
 }
 
 .main-menu a {
-	display: inline-block;
+  display: inline-block;
   vertical-align: top;
-	min-height: 32px;
-	padding: 0 13px;
-	line-height: 32px;
+  min-height: 32px;
+  padding: 0 13px;
+  line-height: 32px;
   font-size: 16px;
 }
 
 .main-menu-item:first-child { margin-left: 15px; }
 
-.main-menu-item > a:hover {
+.main-menu-item:hover > a {
   border-radius: 16px;
   background: #f7f6f3;
   color: #333;
@@ -256,27 +256,27 @@ ul {
 }
 
 .sub-menu-item-new::after {
-	content: "";
-	background: rgba(53,53,53,0.2);
-	height: 1px;
-	margin-top: 0;
-	margin-right: 9px;
-	margin-bottom: 0;
-	margin-left: 6px;
-	display: block;
-	opacity: 1;
+  content: "";
+  background: rgba(53,53,53,0.2);
+  height: 1px;
+  margin-top: 0;
+  margin-right: 9px;
+  margin-bottom: 0;
+  margin-left: 6px;
+  display: block;
+  opacity: 1;
 }
 
 .sub-menu-catalog a {
-	display: block;
-	color: #343434;
-	text-decoration: none;
-	font-size: 14px;
-	line-height: 20px;
-	padding: 9px 20px;
-	height: auto;
+  display: block;
+  color: #343434;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 9px 20px;
+  height: auto;
   min-height: auto;
-	margin-left: 0;
+  margin-left: 0;
 }
 
 .sub-menu-current { background: #D07058; }
@@ -336,7 +336,7 @@ ul {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  padding-left: 10px;
+  padding-left: 10px;  
 }
 
 .search-form { padding-left: 25px; }
@@ -389,7 +389,7 @@ ul {
 .search-field-box input:focus,
 .entrance-form input:focus {
   border: 2px solid rgba(154,154,154,0.52);
-	padding: 5px 10px;
+  padding: 5px 10px;
 }
 
 .search-field-box input:focus,
@@ -464,23 +464,23 @@ ul {
 
 .entrance-form .entrance-field-submit {
   margin-left: 0;
-	float: left;
+  float: left;
 }
 
 .entrance-forget-registration {
-	float: left;
-	padding-left: 9px;
-	margin-top: -3px;
-	margin-bottom: -3px;
+  float: left;
+  padding-left: 9px;
+  margin-top: -3px;
+  margin-bottom: -3px;
 }
 
 .entrance-forget-registration a {
-	text-decoration: underline;
-	color: #333;
-	display: block;
-	font-size: 13px;
-	font-weight: 400;
-	line-height: 21px;
+  text-decoration: underline;
+  color: #333;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .entrance-forget-registration a:hover,
@@ -516,7 +516,7 @@ ul {
 .cart-box-goods-table .cart-box-link-delete {
   display: block;
   padding: 4px;
-	margin: auto;
+  margin: auto;
   cursor: pointer;
 }
 
@@ -568,21 +568,21 @@ ul {
 
 .cart-box .cart-box-sum {
   position: relative;
-	color: #fff;
-	font-size: 15px;
-	color: #333;
-	font-weight: 700;
-	text-align: right;
+  color: #fff;
+  font-size: 15px;
+  color: #333;
+  font-weight: 700;
+  text-align: right;
   margin-top: 21px;
   margin-bottom: 14px;
   margin-right: 10px;
 }
 
 .cart-box .cart-box-submit {
-	min-width: 115px;
-	line-height: 18px;
-	padding: 8px 22px;
-	min-height: auto;
+  min-width: 115px;
+  line-height: 18px;
+  padding: 8px 22px;
+  min-height: auto;
   float: right;
 }
 
@@ -650,16 +650,16 @@ h1 {
 }
 
 .slide {
-	display: none;
-	margin-bottom: -234px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	padding-top: 395px;
-	box-sizing: border-box;
-	z-index: -1;
-	background: url(../img/ic-big-1.png) no-repeat 50% 0%;
-	padding-bottom: 275px;
+  display: none;
+  margin-bottom: -234px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 395px;
+  box-sizing: border-box;
+  z-index: -1;
+  background: url(../img/ic-big-1.png) no-repeat 50% 0%;
+  padding-bottom: 275px;
   transition: background-image 0.5s ease;
 }
 
@@ -684,10 +684,10 @@ h1 {
 }
 
 .slider-image-button {
-	width: 280px;
-	line-height: 64px;
-	border-radius: 32px;
-	margin: auto;
+  width: 280px;
+  line-height: 64px;
+  border-radius: 32px;
+  margin: auto;
 }
 
 .slider-buttons-block {
@@ -741,7 +741,6 @@ h1 {
 .filters {
   float: left;
   min-height: 57px;
-  /*padding-bottom: 15px;*/
 }
 
 .filters:last-child {
@@ -772,18 +771,18 @@ h1 {
 }
 
 .filters .filter-label {
-	padding: 0 16px;
-	font-size: 14px;
-	font-weight: 500;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 17px;
-	min-height: 20px;
+  min-height: 20px;
 }
 
 .filter-sort .filter-content {
-	background: none;
-	padding: 0 0;
-	/*padding-bottom: 17px;*/
-	padding-bottom: 15px;
+  background: none;
+  padding: 0 0;
+  /*padding-bottom: 17px;*/
+  padding-bottom: 15px;
 }
 
 .filter-sort .filter-sort-current {
@@ -811,7 +810,6 @@ h1 {
   border-radius: 0;
   background: #fff;
   min-width: 192px;
-
   position: absolute;
   top: 38px;
   left: 0;
@@ -820,12 +818,12 @@ h1 {
 }
 
 .filter-sort-submenu li a {
-	color: #343434;
-	display: block;
-	padding: 4px 20px;
-	line-height: 16px;
-	font-weight: 400;
-	font-size: 14px;
+  color: #343434;
+  display: block;
+  padding: 4px 20px;
+  line-height: 16px;
+  font-weight: 400;
+  font-size: 14px;
 }
 
 .filter-sort-submenu li a:hover {
@@ -834,15 +832,15 @@ h1 {
 }
 
 .filter-price .filter-content {
-	position: relative;
-	padding: 16px 15px;
+  position: relative;
+  padding: 16px 15px;
 }
 
 .filter-price input {
-	background: none;
-	border: none;
-	color: white;
-	width: 25px;
+  background: none;
+  border: none;
+  color: white;
+  width: 25px;
 }
 
 .filter-range-scale {
@@ -855,11 +853,11 @@ h1 {
 }
 
 .filter-range-bar {
-	position: absolute;
-	left: 30px;
-	width: 98px;
-	height: 4px;
-	background: #f8f7f4;
+  position: absolute;
+  left: 30px;
+  width: 98px;
+  height: 4px;
+  background: #f8f7f4;
 }
 
 .filter-range-toggle {
@@ -932,8 +930,8 @@ input[type="radio"] {
 .filters-apply-button {
   position: absolute;
   line-height: 32px;
-	border: 2px solid #fff;
-	bottom: 0;
+  border: 2px solid #fff;
+  bottom: 0;
   font-weight: 500;
   padding-left: 29px;
   padding-right: 27px;
@@ -958,12 +956,12 @@ input[type="radio"] {
 .ice-cream-item { float: left; }
 
 .ice-cream-item > a {
-	display: block;
-	width: 267px;
-	min-height: 320px;
-	margin-right: 26px;
-	padding-top: 20px;
-	padding-bottom: 5px;
+  display: block;
+  width: 267px;
+  min-height: 320px;
+  margin-right: 26px;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 
 .ice-cream-item-image {
@@ -1008,9 +1006,9 @@ input[type="radio"] {
 .ice-cream-item-hit::before {
   position: relative;
   z-index: 2;
- }
+}
 
- .ice-cream-item-hit::before { z-index: 3; }
+.ice-cream-item-hit::before { z-index: 3; }
 
 .ice-cream-item:hover .catalog-item-overlay { display: block; }
 
@@ -1035,8 +1033,8 @@ input[type="radio"] {
 }
 
 .special-offers h2 {
-	margin-top: 14px;
-	margin-bottom: 14px;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
 
 .special-offers p {
@@ -1103,13 +1101,13 @@ input[type="radio"] {
 }
 
 .special-offer-btn {
-	border-radius: 46px;
-	margin-bottom: 27px;
-	padding-left: 22px;
-	padding-right: 22px;
-	float: right;
-	padding-top: 11px;
-	padding-bottom: 11px;
+  border-radius: 46px;
+  margin-bottom: 27px;
+  padding-left: 22px;
+  padding-right: 22px;
+  float: right;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
 
 .special-offer-left,
@@ -1202,39 +1200,30 @@ input[type="radio"] {
   padding-right: 26px;
   width: 508px;
   background: #f8f7f4 url(../img/post-card.png);
-  /*
-  border: 6px solid white;
-  border-image: repeating-linear-gradient(-45deg,
-                                              #f8f7f4 0px, #f8f7f4 9px,
-                                              #fe9e90 9px, #fe9e90 18px,
-                                              #f8f7f4 18px, #f8f7f4 27px,
-                                              #92cdff 27px, #92cdff 36px);
-  border-image-slice: 6;
-  */
 }
+
 .newsletter-subscription-text,
-.subscription-email-field
- {
+.subscription-email-field {
   color: #5a5a5a
 }
 
 .newsletter-subscription-text {
-	display: block;
+  display: block;
   margin-bottom: 37px;
-	font-size: 16px;
-	font-weight: 400;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 22px;
 }
 
 .subscription-email-field {
-	border: 1px solid rgba(178,178,178,0.52);
-	border-radius: 4px;
-	background: #fff;
-	width: 368px;
-	line-height: 24px;
-	padding: 9px 10px;
-	float: left;
-	box-sizing: border-box;
+  border: 1px solid rgba(178,178,178,0.52);
+  border-radius: 4px;
+  background: #fff;
+  width: 368px;
+  line-height: 24px;
+  padding: 9px 10px;
+  float: left;
+  box-sizing: border-box;
 }
 
 .subscription-email-field:hover {
@@ -1244,15 +1233,15 @@ input[type="radio"] {
 
 .subscription-email-field:focus {
   line-height: 22px;
-  border: 2px solid rgba(46,136,228,0.52);;
+  border: 2px solid rgba(46,136,228,0.52);
 }
 
 .newsletter-subscription-btn {
   float: left;
   border: none;
   margin-left: 10px;
-	border-radius: 21px;
-	line-height: 24px;
+  border-radius: 21px;
+  line-height: 24px;
   padding: 10px 21px;
 }
 
@@ -1263,7 +1252,7 @@ input[type="radio"] {
   min-height: 430px;
   margin: 0 auto;
   margin-top: 40px;
-  background: url(../img/map.jpg); /* Это карта, цветовой фон неуместен */
+  background: url(../img/map.jpg); /* Это карта */
 }
 
 .map-block-interactive {
@@ -1281,17 +1270,17 @@ input[type="radio"] {
   top: 138px;
   width: 218px;
   height: 142px;
-  background: url(../img/pin.png); /* Это курсор, цветовой фон неуместен */
+  background: url(../img/pin.png); /* Это курсор карты */
 }
 
 .map-address-block {
-	background: #fdfefe;
-	border-radius: 12px;
-	width: 302px;
-	padding-top: 30px;
-	padding-right: 25px;
-	padding-left: 25px;
-	box-sizing: border-box;
+  background: #fdfefe;
+  border-radius: 12px;
+  width: 302px;
+  padding-top: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
+  box-sizing: border-box;
   position: absolute;
   left: 50%;
   margin-left: 271px;
@@ -1324,10 +1313,10 @@ input[type="radio"] {
 }
 
 .map-form-btn {
-	width: 254px;
-	min-height: 45px;
-	line-height: 45px;
-	border-radius: 22px;
+  width: 254px;
+  min-height: 45px;
+  line-height: 45px;
+  border-radius: 22px;
   margin-top: 27px;
   margin-right: auto;
   margin-bottom: 30px;
@@ -1393,13 +1382,13 @@ input[type="radio"] {
 }
 
 footer::before {
-	content: "";
+  content: "";
   display: block;
-	width: 1146px;
-	height: 1px;
-	background: #fff;
-	opacity: 0.2;
-	margin: 0 auto;
+  width: 1146px;
+  height: 1px;
+  background: #fff;
+  opacity: 0.2;
+  margin: 0 auto;
 }
 
 .footer-social,
@@ -1476,9 +1465,9 @@ footer .transparent-underline:active {
   width: 478px;
   min-height: 442px;
   box-sizing: border-box;
-  top: 338px;
+  top: 25%;
   left: 50%;
-  margin-left: -239px;
+  transform: translateX(-50%);
   background: #f8f7f4;
   padding: 19px 25px;
   padding-bottom: 26px;
@@ -1613,15 +1602,15 @@ footer .transparent-underline:active {
 .logo-btn { background-position: 0px -90px; }
 
 .header-right .search-btn {
-	background-color: rgba(255,255,255, 0.2);
-	background-position: -142px -153px;
-	width: 17px;
-	height: 17px;
-	padding-top: 7px;
-	padding-right: 8px;
-	padding-bottom: 8px;
-	padding-left: 8px;
-	border-radius: 16px;
+  background-color: rgba(255,255,255, 0.2);
+  background-position: -142px -153px;
+  width: 17px;
+  height: 17px;
+  padding-top: 7px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  border-radius: 16px;
 }
 
 .header-right .search-btn:hover {
@@ -1630,14 +1619,14 @@ footer .transparent-underline:active {
 }
 
 .entrance-btn::before {
-	background-position: -200px -90px;
+  background-position: -200px -90px;
   width: 19px;
-	height: 18px;
-	content: "";
-	display: block;
-	position: absolute;
-	left: 16px;
-	top: 7px;
+  height: 18px;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 16px;
+  top: 7px;
 }
 
 .entrance-btn:hover,
@@ -1651,7 +1640,7 @@ footer .transparent-underline:active {
 
 .cart-btn::before,
 .cart-btn-filled::before {
-	background-position: -225px -40px;
+  background-position: -225px -40px;
   width: 21px;
   height: 20px;
   content: "";
@@ -1668,9 +1657,9 @@ footer .transparent-underline:active {
 .cart-btn-filled:hover::before { background-position: -200px -200px; }
 
 .cart-box-link-delete {
-	background-position: -16px -276px;
-	width: 10px;
-	height: 11px;
+  background-position: -16px -276px;
+  width: 10px;
+  height: 11px;
 }
 
 .filter-sort-current::after { background-position: -225px -26px; }
