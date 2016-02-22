@@ -336,12 +336,18 @@ ul {
   display: inline-block;
   vertical-align: top;
   position: relative;
-  padding-left: 10px;  
+  padding-left: 10px;
+  cursor: pointer;
 }
 
 .search-form { padding-left: 25px; }
 
 .entrance-form .entrance-btn { margin-left: 0; }
+
+.entrance-btn,
+.search-btn {
+  cursor: pointer;
+}
 
 .cart-box-btn {
   position: relative;
@@ -1467,8 +1473,9 @@ footer .transparent-underline:active {
   box-sizing: border-box;
   top: 25%;
   left: 50%;
-  transform: translateX(-50%);
   background: #f8f7f4;
+  margin-left: -239px;
+  /*transform: translateX(-50%);*/
   padding: 19px 25px;
   padding-bottom: 26px;
   border-radius: 9px;
